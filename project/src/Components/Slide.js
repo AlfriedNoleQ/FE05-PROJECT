@@ -3,15 +3,14 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.min.js';
 import $ from "jquery";
 import './Slide.css';
-import main from './images/main.jpg';
-import nikon from './images/nikon.png';
-import canon from './images/canon.png';
+import dslr_tuto from './images/dslr-tutorials.png';
+import home_banner from './images/home_banner_camera.jpg';
+import header_banner from './images/header-banner.jpg';
 
 class Slide extends Component {
 	render() {
 		return(
 			<div id="slideShow">
-				<div className="container">
 					<div id="slides" className="carousel slide" data-ride="carousel">
 					<ul className="carousel-indicators">
 						<li data-target="#slides" data-slide-to="0" className="active"></li>
@@ -20,25 +19,30 @@ class Slide extends Component {
 					</ul>
 					<div className="carousel-inner">
 						<div className="carousel-item active">
-							<img src={main}/>
+							<img src={home_banner}/>
 							<div className="carousel-caption">
-								<h1>Main</h1>
+								<h1></h1>
+								<button type="button" className="btn btn-success btn-lg">VISIT BLOG</button>
+								<button type="button" className="btn btn-primary btn-lg">GO TO SHOP</button>
 							</div>
 						</div>
 						<div className="carousel-item">
-							<img src={nikon}/>
+							<img src={dslr_tuto}/>
 							<div className="carousel-caption">
-								<h1>Nikon</h1>
+								<h1></h1>
+								<button type="button" className="btn btn-success btn-lg">VISIT BLOG</button>
+								<button type="button" className="btn btn-primary btn-lg">GO TO SHOP</button>
 							</div>
 						</div>
 						<div className="carousel-item">
-							<img src={canon}/>
+							<img src={header_banner}/>
 							<div className="carousel-caption">
-								<h1>Canon</h1>
+								<h1></h1>
+								<button type="button" className="btn btn-success btn-lg">VISIT BLOG</button>
+								<button type="button" className="btn btn-primary btn-lg">GO TO SHOP</button>
 							</div>
 						</div>
 					</div>
-				</div>
 				</div>
 			</div>
 		);
