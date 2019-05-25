@@ -2,10 +2,10 @@ import React, { Component } from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.min.js';
 import $ from "jquery";
-import './Slide.css';
-import dslr_tuto from './images/dslr-tutorials.png';
-import home_banner from './images/home_banner_camera.jpg';
-import header_banner from './images/header-banner.jpg';
+import '../styles/Slide.css';
+import dslr_tuto from '../images/dslr-tutorials.png';
+import home_banner from '../images/home_banner_camera.jpg';
+import header_banner from '../images/header-banner.jpg';
 
 class Slide extends Component {
 	render() {

@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import home_banner from './images/home_banner_camera.jpg';
+import home_banner from '../images/home_banner_camera.jpg';
 
 class Banner extends Component {
 	render () {

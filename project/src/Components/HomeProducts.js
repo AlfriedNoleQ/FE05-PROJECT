@@ -33,7 +33,7 @@ class HomeProducts extends Component {
 						<div className="col-9 mx-auto col-md-6 col-lg-3 my-3">
 						<div className="card">
 							<div className="img-container p-5"  >
-								<img className="card-img-top" src={ require(`./${item.img}`)}/>
+								<img className="card-img-top" src={ require(`../${item.img}`)}/>
 							</div>
 						</div>
 						<div className="card-footer d-flex justify-content-between">
