@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.min.js';
 import $ from "jquery";
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import './Social.css';
 
 class Social extends Component {
 	render() {
@@ -11,7 +11,7 @@ class Social extends Component {
 				<div className="container-fluid padding">
 					<div className="row text-center padding">
 						<div className="col-12">
-							<h1>Social</h1>
+							<h2>SOCIAL</h2>
 						</div>
 						<div className="col-12 social padding">
 							<a href="#"><i className="fab fa-facebook"></i></a>
