@@ -11,7 +11,7 @@ class TextBlog extends Component {
 					<div className="row jumbotron">
 						<div className="col-xs-12 col-sm-12 col-md-9 col-lg-9 col-xl-10">
 							<p className="lead">Chào mừng bạn tới trang web bán máy ảnh của tôi, nơi đây không chỉ là 
-							trang mà tôi bán những sản phẩm máy ảnh dslr chất lượng mà còn là trang tôi viết blog,
+							trang mà tôi bán những sản phẩm máy ảnh DSLR chất lượng mà còn là trang tôi viết blog,
 							là nơi dành cho những người có niềm đam mê bất tận với máy ảnh, gặp gỡ và 
 							chia sẻ kinh nghiệm cùng với những bức ảnh đẹp...
 							</p>
