@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.min.js';
 import $ from "jquery";
+import './Navigation.css';
 import {Switch,Route} from 'react-router-dom';
 import logo from './images/logo.png';
 
@@ -17,17 +18,17 @@ class Navigation extends Component {
 						</button>
 						<div className="collapse navbar-collapse" id="navbarReponsive">
 							<ul className="navbar-nav ml-auto">
-								<li className="nav-item active">
-									<a className="nav-link" href="#">Home</a>
+								<li className="nav-item">
+									<a className="link nav-link" href="#">HOME</a>
 								</li>
 								<li className="nav-item">
-									<a className="nav-link" href="#">Blog</a>
+									<a className="nav-link" href="#">BLOG</a>
 								</li>
 								<li className="nav-item">
-									<a className="nav-link" href="#">Product</a>
+									<a className="nav-link" href="#">PRODUCTS</a>
 								</li>
 								<li className="nav-item">
-									<a className="nav-link" href="#">Guide</a>
+									<a className="nav-link" href="#">GUIDER</a>
 								</li>
 							</ul>
 						</div>

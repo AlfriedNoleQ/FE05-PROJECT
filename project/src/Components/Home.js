@@ -1,8 +1,10 @@
 import React, { Component } from 'react';
 import {Switch,Route} from 'react-router-dom';
 import Navigation from './Navigation';
-import Banner from './Banner';
 import Slide from './Slide';
+import TextBlog from './TextBlog';
+import HomeProducts from './HomeProducts';
+import Social from './Social';
 
 class Home extends Component {
 	render() {
@@ -10,10 +12,12 @@ class Home extends Component {
 			<div>
 				<React.Fragment>
 					<Navigation/>
-					<Banner/>
 					<Slide/>
+					<TextBlog/>
+					<HomeProducts/>
+					<Social/>
 					<switch>
-						
+							
 					</switch>
 					
 				</React.Fragment>
