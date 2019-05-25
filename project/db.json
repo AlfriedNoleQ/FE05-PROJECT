@@ -1,0 +1,92 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "name": "Canon 750D",
+      "img": "images/products/product-1.jpg",
+      "price": 140,
+      "company": "Canon",
+      "info": "Cảm biến: CMOS 24.2MP. Bộ xử lý hình ảnh: DIGIC 6. ISO: ISO 100 - ISO 6400. Hệ thống lấy nét: 19 điểm. Chụp ảnh liên tục: tối đa khoảng 5,0 ảnh/giây. Truyền hình ảnh nhanh với kết nối Wifi",
+      "inCart": false,
+      "count": 0,
+      "total": 0
+    },
+    {
+      "id": 2,
+      "name": "Nikon D3400",
+      "img": "images/products/product-2.jpg",
+      "price": 160,
+      "company": "Nikon",
+      "info": "Cảm biến CMOS 24.2MP DX. Bộ xử lý hình ảnh EXPEED 4. ISO: 100-25600. Tốc độ chụp liên tục 5fps. Màn hình LCD 3 921K-Dot. Quay phim Full HD 1080p tại 60fps. Hệ thống lấy nét 11 điểm AF. Ống kính AF-P DX 18-55mm F/3.5-5.6G VR. Hỗ trợ kết nối Bluetooth 4.1 LE. Pin EN-EL14a chụp tối đa 1.200 tấm",
+      "inCart": false,
+      "count": 0,
+      "total": 0
+    },
+    {
+      "id": 3,
+      "name": "Canon 6D",
+      "img": "images/products/product-3.jpg",
+      "price": 200,
+      "company": "Canon",
+      "info": "Máy ảnh DSLR Fullframe bán chạy nhất. Cảm biến: CMOS 20.2 MP. Bộ xử lý hình ảnh: Digic 5+ ISO: 100 - 25600. Hệ thống lấy nét: 11 điểm AF. Chụp ảnh liên tục: Tối đa khoảng 4,5 ảnh/giây. Có định vị GPS, Kết nối wifi",
+      "inCart": false,
+      "count": 0,
+      "total": 0
+    },
+    {
+      "id": 4,
+      "name": "Canon 80D",
+      "img": "images/products/product-4.jpg",
+      "price": 240,
+      "company": "Canon",
+      "info": "Cảm biến: CMOS 24.2 MP. Bộ xử lý hình ảnh: DIGIC 6 ISO:100-16000 (mở rộng 25600). Hệ thống lấy nét: 45 điểm. Chụp ảnh liên tục: tối đa khoảng 7.0 hình/giây",
+      "inCart": false,
+      "count": 0,
+      "total": 0
+    },
+    {
+      "id": 5,
+      "name": "Nikon Coolpix P1000",
+      "img": "images/products/product-5.jpg",
+      "price": 170,
+      "company": "Nikon",
+      "info": "Cảm biến: 1/2.3 CMOS. Tiêu cự: 24-3000mm. Zoom quang học 125x. Khả năng chống rung lên đến 5-stops. Màn hình LCD 3.2 xoay lật tự do ISO 100-6400. Quay video 4K UHD 30/25fp. Hỗ trợ cổng Micro, HDMI. Tích hợp Wi-Fi, Bluetooth",
+      "inCart": false,
+      "count": 0,
+      "total": 0
+    },
+    {
+      "id": 6,
+      "name": "Olympus EM10",
+      "img": "images/products/product-6.jpg",
+      "price": 210,
+      "company": "Olympus",
+      "info": "Cảm biến Live MOS 16MP. Bộ xử lý ảnh True Pic VII. Công nghệ chống rung 5 trục .Ống ngắm điện từ EVF OLED độ phân giải 2.3MP. Chế độ im lặng Silent Mode. Chụp liên tiếp 8.5fps. Có flash cóc. Kết nối: Wifi 802.11b/g/n, USB 2.0, HDMI. OI Share and Live View thông qua Wifi. Quay video Full HD, timelapse 4K. Trọng lượng: 390gr",
+      "inCart": false,
+      "count": 0,
+      "total": 0
+    },
+    {
+      "id": 7,
+      "name": "Sony A7II",
+      "img": "images/products/product-7.jpg",
+      "price": 150,
+      "company": "Sony",
+      "info": "Cảm biến CMOS Exmor 24.3MP Full Khung hình. Bộ xử lý hình ảnh BIONZ X. Khả năng tương thích trực tiếp với Ống kính E-mount. LCD 3.0 tiltable TFT với 1,228 triệu điểm ảnh Kính ngắm điện tử OLED 2.4m-Dot. Quay phim: XAVC S 50 Mbps, AVCHD 2.0 28 Mbps, 1.920 x 1.080 pixel. Chụp liên tiếp: 2,5 hình/giây đến 5 hình/giây. Tích hợp Wi-Fi và công nghệ NFC. Đa giao diện và Flash gắn trong. Giao diện truy cập trực tiếp",
+      "inCart": false,
+      "count": 0,
+      "total": 0
+    },
+    {
+      "id": 8,
+      "name": "Fujifilm X-T20",
+      "img": "images/products/product-8.jpg",
+      "price": 190,
+      "company": "Fujifilm",
+      "info": "Cảm biến APS-C X-Trans CMOS III 24.3MP. Bộ xử lý hình ảnh X-Processor Pro. Màn hình cảm ứng TFT LCD 3inch 1.04 triệu điểm ảnh. Ống ngắm điện tử OLED kích thước 0.39 2,36MP. ISO 51200, tốc độ chụp 14fps. Khả năng quay video 4K UHD. Khả năng kết nối wifi. 91 điểm lấy nét với chế độ AF-C. Tương thích thẻ nhớ SD, SHHC, SDXC, UHS-II. Ống kính 18-55mm chống rung quang học tuyệt vời",
+      "inCart": false,
+      "count": 0,
+      "total": 0
+    }
+  ]
+}
