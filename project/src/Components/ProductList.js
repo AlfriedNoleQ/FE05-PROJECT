@@ -28,14 +28,14 @@ class ProductList extends Component {
 					<div className="col-9 mx-auto col-md-6 col-lg-3 my-3">
 						<div className="card">
 							<div className="img-container p-5"  >
-								<Link to={ `/chi-tiet/${product.id}`}>
+								<Link to={ `/details/${product.id}`}>
 									<img className="card-img-top" src={ require(`../${product.img}`)}/>
 								</Link>
 							</div>
 						</div>
 						<div className="card-footer d-flex justify-content-between">
 							<p className="align-self-center mb-0">{product.name}</p>
-							<h5 className="text-blue font-italic mb-0">${product.price}</h5>
+							<h5 className="text-red font-italic mb-0">${product.price}</h5>
 						</div>
 					</div>
 				)
