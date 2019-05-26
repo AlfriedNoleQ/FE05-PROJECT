@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.min.js';
+import {Link} from 'react-router-dom';
 import $ from "jquery";
 
 class TextBlog extends Component {
@@ -17,7 +18,9 @@ class TextBlog extends Component {
 							</p>
 						</div>
 						<div className="col-xs-12 col-sm-12 col-md-3 col-lg-3 col-xl-2">
-							<a href="#"><button type="button" className="btn btn-outline-secondary btn-lg">VISIT BLOG</button></a>
+							<Link to="/blog">
+								<button type="button" className="btn btn-outline-secondary btn-lg">VISIT BLOG</button>
+							</Link>
 						</div>
 					</div>
 				</div>
