@@ -13,7 +13,7 @@ class Home extends Component {
 					<Slide/>
 					<TextBlog/>
 					<HomeProducts/>
-					<Social/>	
+					<Social/>
 				</React.Fragment>
 			</div>
 		);
