@@ -19,28 +19,28 @@ class Navigation extends Component {
 				  <div className="collapse navbar-collapse" id="navbarTogglerDemo03">
 				    <ul className="navbar-nav mr-auto mt-2 mt-lg-0">
 				      <li className="nav-item">
-							<Link to="/" className="nav-link">
+							<Link to="/" className="nav-link navlink">
 			                  HOME
 			                </Link>
 				      </li>
 				      <li className="nav-item">
-							<Link to="/products" className="nav-link">
+							<Link to="/products" className="nav-link navlink">
 			                  PRODUCTS
 			                </Link>
 				      </li>
 				      <li className="nav-item">
-							<Link to="/guide" className="nav-link">
+							<Link to="/guide" className="nav-link navlink">
 			                  GUIDE
 			                </Link>
 				      </li>
-						<li className="nav-item mr-auto">
-							<Link to="/blog" className="nav-link">
+						<li className="nav-item">
+							<Link to="/blog" className="nav-link navlink">
 			                  BLOG
 			                </Link>
 				      </li>
 				    </ul>
 				    <form className="form-inline my-2 my-lg-0">
-				      <input className="form-control mr-sm-2" id="inputsearch" type="search" placeholder="Search" aria-label="Search" />
+				      <input className="form-control mr-sm-2" id="inputsearch" type="search" placeholder="Search..." aria-label="Search" />
 				      <button className="btn btn-outline-primary my-2 my-sm-0"  type="submit"><i className="fa fa-search"></i></button>
 				    </form>
 						<div className="dropdown ml-auto">

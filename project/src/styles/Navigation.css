@@ -1,3 +1,22 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+.navbar-expand-lg {
+	background-color: #c7c7c7 !important;
+	/*position: fixed;*/
+	width: 100%;
+	/*z-index: 10;*/
+}
+.navlink {
+	color: #ffffff !important;
+}
+.navlink: hover {
+	font-style: italic;
+	border-bottom: 1px solid #ffffff;
+}
+
+/* media queries*/
 
 @media only screen and (min-width: 320px) {
 	.nav-item .nav-link{

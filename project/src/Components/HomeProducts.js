@@ -49,9 +49,9 @@ class HomeProducts extends Component {
 		return(
 			<div>
 				<div className="container-fluid text-center">
-					<h2>PRODUCTS</h2>
+					<h2>NEW PRODUCTS</h2>
 				</div>
-				<div className="container py-3">
+				<div className="container">
 					<div className="container">
 						<div className="row">
 							{list}
