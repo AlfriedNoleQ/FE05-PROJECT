@@ -3,6 +3,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.min.js';
 import $ from "jquery";
 import Axios from 'axios';
+import {Link} from 'react-router-dom';
 
 class HomeProducts extends Component {
 	constructor(props) {
@@ -32,8 +33,10 @@ class HomeProducts extends Component {
 					return(
 						<div className="col-9 mx-auto col-md-6 col-lg-3 my-3">
 						<div className="card">
-							<div className="img-container p-5"  >
-								<img className="card-img-top" src={ require(`../${item.img}`)}/>
+							<div className="img-container p-5">
+								<Link to={ `/details/${item.id}`}>
+									<img className="card-img-top" src={ require(`../${item.img}`)}/>
+								</Link>
 							</div>
 						</div>
 						<div className="card-footer d-flex justify-content-between">

@@ -9,6 +9,7 @@ class Social extends Component {
 		return(
 			<div>
 				<div className="container-fluid padding">
+					<hr/>
 					<div className="row text-center padding">
 						<div className="col-12">
 							<h2>SOCIAL</h2>

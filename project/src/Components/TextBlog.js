@@ -3,6 +3,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.min.js';
 import {Link} from 'react-router-dom';
 import $ from "jquery";
+import '../styles/TextBlog.css';
 
 class TextBlog extends Component {
 	render() {

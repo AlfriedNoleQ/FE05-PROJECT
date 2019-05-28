@@ -1,0 +1,11 @@
+.padding {
+	padding-bottom: 2rem;
+}
+footer {
+	background-color: #3f3f3f;
+	color: #d5d5d5;
+	padding-top: 2rem;
+}
+hr {
+	border-top: 1px solid #d5d5d5;
+}
