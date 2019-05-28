@@ -2,12 +2,13 @@ import React, { Component } from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
 import {Switch,Route} from 'react-router-dom';
-import Home from './components/Home';
-import Default from './components/Default';
-import Navigation from '../src/components/Navigation';
-import ProductList from '../src/components/ProductList';
-import Details from './components/Details';
-import Cart from '../src/components/Cart/Cart';
+import Home from './Components/Home';
+import Default from './Components/Default';
+import Navigation from '../src/Components/Navigation';
+import ProductList from '../src/Components/ProductList';
+import Details from './Components/Details';
+import Cart from '../src/Components/Cart/Cart';
+import Footer from '../src/Components/Footer';
 
 class App extends Component {
   render() {
@@ -21,6 +22,7 @@ class App extends Component {
           <Route path="/cart" component={Cart} />
           <Route component={Default} />
         </Switch>
+        <Footer/>
       </React.Fragment>
     )
   }

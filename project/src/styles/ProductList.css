@@ -33,4 +33,7 @@
 
 .img-container:hover {
     transform: translate(0, 0);
-} 
+}
+.container {
+    padding-bottom: 2rem;
+}
