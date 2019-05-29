@@ -12,7 +12,7 @@ class Social extends Component {
 					<hr/>
 					<div className="row text-center padding">
 						<div className="col-12">
-							<h2>SOCIAL</h2>
+							<span className="social-title">SOCIAL</span>
 						</div>
 						<div className="col-12 social padding">
 							<a href="#"><i className="fab fa-facebook"></i></a>
