@@ -6,14 +6,13 @@ class SignUp extends Component {
 	render() {
 		return(
 			<div className="container-fluid text-center">
-			<h3>New? Register Now!</h3>
+			<h3 className="padding">New? Register Now!</h3>
 				<div className="container">	
 					<div className="container">
 						<form>
 							<div class="form-group">
-							   <label for="exampleInputEmail1">Email address</label>
+							   <label for="exampleInputEmail1">Email</label>
 							   <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email..." />
-							   <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
 							</div>
 							<div class="form-group">
 							   <label for="exampleInputPassword1">Password</label>
