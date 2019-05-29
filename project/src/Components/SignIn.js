@@ -6,7 +6,7 @@ class SignIn extends Component {
 	render() {
 		return(
 			<div className="container-fluid text-center">
-			<h3>Sign In</h3>
+			<h3 className="padding">Sign In</h3>
 				<div className="container">
 					<form>
 					  <div class="form-group">
