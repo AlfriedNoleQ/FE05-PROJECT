@@ -21,7 +21,6 @@ class Slide extends Component {
 						<div className="carousel-item active">
 							<img src={home_banner}/>
 							<div className="carousel-caption">
-								<h1></h1>
 								<button type="button" className="btn btn-success btn-lg">VISIT BLOG</button>
 								<button type="button" className="btn btn-primary btn-lg">GO TO SHOP</button>
 							</div>
@@ -29,7 +28,6 @@ class Slide extends Component {
 						<div className="carousel-item">
 							<img src={dslr_tuto}/>
 							<div className="carousel-caption">
-								<h1></h1>
 								<button type="button" className="btn btn-success btn-lg">VISIT BLOG</button>
 								<button type="button" className="btn btn-primary btn-lg">GO TO SHOP</button>
 							</div>
@@ -37,7 +35,6 @@ class Slide extends Component {
 						<div className="carousel-item">
 							<img src={header_banner}/>
 							<div className="carousel-caption">
-								<h1></h1>
 								<button type="button" className="btn btn-success btn-lg">VISIT BLOG</button>
 								<button type="button" className="btn btn-primary btn-lg">GO TO SHOP</button>
 							</div>

@@ -3,60 +3,56 @@
 	padding: 0;
 }
 .navbar-expand-lg {
-	background-color: #c7c7c7 !important;
-	/*position: fixed;*/
+	/*position: fixed;
 	width: 100%;
-	/*z-index: 10;*/
+	z-index: 21;*/
+	background-color: #c7c7c7 !important;
 }
 .navlink {
 	color: #ffffff !important;
 }
-.navlink: hover {
-	font-style: italic;
-	border-bottom: 1px solid #ffffff;
+.navlink:hover {
+	color: #000000 !important;
+	border-bottom: 2px solid #000000;
 }
 
 /* media queries*/
 
 @media only screen and (min-width: 320px) {
-	.nav-item .nav-link{
+	.nav-item>.nav-link, #inputsearch, .form-inline>button{
 		font-size: 100%;
 	}
 	.dropdown button, .cart {
 		font-size: 100%;
 	}
-	#inputsearch {
-		font-size: 100%;
-	}
-	.form-inline button {
-		font-size: 100%;
+	.navbar-expand-lg {
+		position: relative;
+		background-color: #c7c7c7 !important;
 	}
 }
 @media only screen and (min-width: 768px) {
-	.nav-item .nav-link {
-		font-size: 75%;
-	}
-	#inputsearch {
-		font-size: 75%;
-	}
-	.form-inline button {
+	.nav-item>.nav-link, #inputsearch, .form-inline>button{
 		font-size: 75%;
 	}
 	.dropdown button, .cart {
-		font-size: 75%;
+		font-size: 55%;
+	}
+	.navbar-expand-lg {
+		position: relative;
+		background-color: #c7c7c7 !important;
 	}
 }
 @media only screen and (min-width: 1024px){
-	.nav-item .nav-link {
-		font-size: 100%;
-	}
-	.form-inline button {
-		font-size: 100%;
-	}
-	#inputsearch {
+	.nav-item>.nav-link, #inputsearch, .form-inline>button{
 		font-size: 100%;
 	}
 	.dropdown button, .cart {
 		font-size: 75%;
+	}
+	.navbar-expand-lg {
+		/*position: fixed;
+		width: 100%;
+		z-index: 21;*/
+		background-color: #c7c7c7 !important;
 	}
 }

@@ -6,11 +6,11 @@ import '../styles/HomeProducts.css';
 import Axios from 'axios';
 import {Link} from 'react-router-dom';
 
-class HomeProducts extends Component {
+class HotDeals extends Component {
 	constructor(props) {
 		super(props);
 		this.state = {
-			homeProducts: [],
+			hotDeals: [],
 		};
 	}
 
@@ -22,7 +22,7 @@ class HomeProducts extends Component {
 		}).then(response => {
 			console.log(response);
 			this.setState ({
-				homeProducts: response.data.slice(0,4)
+				hotDeals: response.data.slice(0,4)
 			});
 		}).catch (err => {
 			console.log(err);
@@ -30,7 +30,7 @@ class HomeProducts extends Component {
 	}
 
 	render() {
-		let list = this.state.homeProducts.map((item)=>{
+		let list = this.state.hotDeals.map((item)=>{
 					return(
 						<div className="col-12 mx-auto col-md-6 col-lg-3 my-3">
 							<div className="card">
@@ -52,7 +52,7 @@ class HomeProducts extends Component {
 				<div className="container-fluid">
 					<div className="container">
 						<div className="content">
-							<span className="d-inline-block title">NEW PRODUCTS</span>
+							<span className="d-inline-block title">HOT DEALS</span>
 							<Link to="/products" className="float-right">more...</Link>
 						</div>
 					</div>
@@ -69,4 +69,4 @@ class HomeProducts extends Component {
 	}
 }
 
-export default HomeProducts;
+export default HotDeals;

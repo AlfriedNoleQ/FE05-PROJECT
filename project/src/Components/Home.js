@@ -3,7 +3,10 @@ import {Switch,Route} from 'react-router-dom';
 import Slide from './Slide';
 import TextBlog from './TextBlog';
 import HomeProducts from './HomeProducts';
+import HotDeals from './HotDeals';
 import Social from './Social';
+import Banner from './Banner';
+import BlogPosts from './BlogPosts';
 
 class Home extends Component {
 	render() {
@@ -13,6 +16,9 @@ class Home extends Component {
 					<Slide/>
 					<TextBlog/>
 					<HomeProducts/>
+					<HotDeals/>
+					<Banner/>
+					<BlogPosts/>
 					<Social/>
 				</React.Fragment>
 			</div>
