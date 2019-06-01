@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.min.js';
-import banner_1 from '../images/banner1.png';
-import banner_2 from '../images/banner2.png';
-import banner_3 from '../images/banner3.png';
+import banner_1 from '../../images/banner1.png';
+import banner_2 from '../../images/banner2.png';
+import banner_3 from '../../images/banner3.png';
 
 class Banner extends Component {
 	render () {

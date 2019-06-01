@@ -11,7 +11,7 @@ class EmptyCart extends Component {
                         <img src={emptycart} alt="emptycart" height="300" width="550" />
                         <h5>Your cart is currently empty</h5>
                         <Link to="/products">
-                            <button className="btn btn-outline-primary text-uppercase mb-3 px-5" 
+                            <button className="btn btn-primary text-uppercase mb-3 px-5" 
                             type="button">
                                 continue shopping
                             </button>

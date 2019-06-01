@@ -1,22 +1,22 @@
 import React, { Component } from 'react';
 import {Link} from 'react-router-dom';
 import Axios from 'axios';
-import {ProductConsumer} from '../context';
+import {ProductConsumer} from '../../context';
+import {formatMoney} from "../../format/priceFormatter";
 
-class Details extends Component {
+class ProductDetails extends Component {
     constructor(props) {
         super(props);
-        const id = this.props.match.params.id;
 		this.state = {
-            id,
+            id: this.props.id,
             product: {},
 		}
 	}
 
 	componentDidMount(){
-        Axios.get(`http://localhost:3000/products/${this.props.match.params.id}`)
+        Axios.get(`http://localhost:3000/products/${this.state.id}`)
 		.then(response => {
-			console.log(response.data);
+			// console.log(response.data);
 			this.setState({product: response.data});
 		});
     }
@@ -33,18 +33,18 @@ class Details extends Component {
                             </div>
                         </div>
                         <div className="row">
-                            <div className="col-10 mx-auto col-md-6 my-3 text-capitalize">
-                                <img src={require(`../${product.img}`)} className="img-fluid" alt="product" />
+                            <div className="col-10 mx-auto col-md-6 my-3 border text-capitalize">
+                                <img src={require(`../../${product.img}`)} className="img-fluid" alt="product" />
                             </div>
                             <div className="col-10 mx-auto col-md-6 my-3 text-capitalize">
                                 <h3>Company: {product.company}</h3>
-                                <h3 className="text-red">Price: ${product.price}</h3>
-                                <h3>Product Info:</h3><p>{product.info}</p>
+                                <h3 className="text-red">Price: <font color="red">{formatMoney(product.price)}</font> Đ</h3>
+                                <h3>Product Info:</h3><div className="mb-3" dangerouslySetInnerHTML={{__html: product.info}} />
                                 <div>
                                     <Link to="/products">
-                                        <button className="btn btn-outline-primary text-uppercase">continue shopping</button>
+                                        <button className="btn btn-primary text-uppercase">continue shopping</button>
                                     </Link>
-                                    <button className="btn btn-outline-primary text-uppercase mx-3" disabled={product.inCart?true:false} onClick={() => {
+                                    <button className="btn btn-success text-uppercase mx-3" disabled={product.inCart?true:false} onClick={() => {
                                         value.addToCart(Number(id)); product.inCart = true;}}>
                                         {product.inCart ? 'in cart' : 'add to cart'}
                                     </button>
@@ -69,4 +69,4 @@ class Details extends Component {
     }
 }
 
-export default Details;
+export default ProductDetails;

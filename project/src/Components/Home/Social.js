@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.min.js';
 import $ from "jquery";
-import '../styles/Social.css';
+import '../../styles/Social.css';
 
 class Social extends Component {
 	render() {
