@@ -5,6 +5,7 @@ import $ from "jquery";
 import '../styles/HomeProducts.css';
 import Axios from 'axios';
 import {Link} from 'react-router-dom';
+import {formatMoney} from "./../format/priceFormatter";
 
 class HotDeals extends Component {
 	constructor(props) {
@@ -22,7 +23,7 @@ class HotDeals extends Component {
 		}).then(response => {
 			console.log(response);
 			this.setState ({
-				hotDeals: response.data.slice(0,4)
+				hotDeals: response.data.slice(0,8)
 			});
 		}).catch (err => {
 			console.log(err);
@@ -42,7 +43,9 @@ class HotDeals extends Component {
 							</div>
 							<div className="card-footer d-flex justify-content-between">
 								<p className="align-self-center mb-0">{item.name}</p>
-								<h5 className="text-blue font-italic mb-0">${item.price}</h5>
+							</div>
+							<div className="card-footer text-center d-flex justify-content-between">
+								<h5 className="text-red text-danger font-italic mb-0">{formatMoney(item.price)} đ</h5>
 							</div>
 						</div>
 					)
@@ -51,17 +54,19 @@ class HotDeals extends Component {
 			<div>
 				<div className="container-fluid">
 					<div className="container">
-						<div className="content">
+						<div className="content text-center">
 							<span className="d-inline-block title">HOT DEALS</span>
-							<Link to="/products" className="float-right">more...</Link>
 						</div>
 					</div>
 				</div>
-				<div className="container py-3">
+				<div className="container-fluid py-3">
 					<div className="container">
 						<div className="row">
 							{list}
 						</div>
+					</div>
+					<div className="text-center padding">
+						<Link to="/products"><button className="btn btn-outline-success btn-lg">More...</button></Link>
 					</div>
 				</div>
 			</div>

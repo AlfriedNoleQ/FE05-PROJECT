@@ -3,6 +3,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import '../styles/ProductList.css';
 import Axios from 'axios';
 import {Link} from 'react-router-dom';
+import {formatMoney} from "./../format/priceFormatter";
 
 class ProductList extends Component {
 	constructor(props) {
@@ -35,7 +36,9 @@ class ProductList extends Component {
 						</div>
 						<div className="card-footer d-flex justify-content-between">
 							<p className="align-self-center mb-0">{product.name}</p>
-							<h5 className="text-red font-italic mb-0">${product.price}</h5>
+						</div>
+						<div className="card-footer text-center d-flex justify-content-between">
+							<h5 className="text-red text-danger font-italic mb-0">{formatMoney(product.price)} đ</h5>
 						</div>
 					</div>
 				)
@@ -44,7 +47,7 @@ class ProductList extends Component {
 			<div className="center"></div>
 		)
     return (
-    	<div className="container py-3">
+    	<div className="container-fluid py-3">
     		<div className="container">
     			<div className="row">
     				{productList}

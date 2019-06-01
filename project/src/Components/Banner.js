@@ -10,14 +10,12 @@ class Banner extends Component {
 		return (
 			<div>
 				<div className="container-fluid">
-					<div className="row">
-						<div className="col">
+					<div className="container">
+						<div className="row">
 							<img src={banner_1} className="col-xs-12 col-md-6 col-lg-6 padding" />
-							<img src={banner_2} className="col-xs-12 col-md-6 col-lg-6 padding" />
+							<img src={banner_2} className="col-xs-12 col-md-6 col-lg-6 padding" />						
 						</div>
-					</div>
-					<div className="row">
-						<div className="col">
+						<div className="row">						
 							<img src={banner_3} className="col-12 padding" />
 						</div>
 					</div>

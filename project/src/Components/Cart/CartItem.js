@@ -1,4 +1,5 @@
 import React from 'react';
+import {formatMoney} from "./../../format/priceFormatter";
 
 function CartItem ({item, value}) {
     const {id,name,img,price,total,count} = item;
@@ -12,7 +13,7 @@ function CartItem ({item, value}) {
                 <span className="d-lg-none">sản phẩm : </span>{name}
             </div>
             <div className="col-10 mx-auto col-lg-2">
-                <span className="d-lg-none">giá : </span>${price}
+                <span className="d-lg-none">giá : </span>{formatMoney(price)} đ
             </div>
             <div className="col-10 mx-auto col-lg-2 my-2 my-lg-0">
                 <div className="d-flex justify-content-center">
@@ -29,7 +30,7 @@ function CartItem ({item, value}) {
                 </div>
             </div>
             <div className="col-10 mx-auto col-lg-2">
-                <strong>${total}</strong>
+                <strong>{formatMoney(total)} đ</strong>
             </div>
         </div>
     )
