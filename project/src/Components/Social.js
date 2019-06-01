@@ -10,11 +10,11 @@ class Social extends Component {
 			<div>
 				<div className="container-fluid padding">
 					<hr/>
-					<div className="row text-center padding">
+					<div className="row text-center">
 						<div className="col-12">
 							<span className="social-title">SOCIAL</span>
 						</div>
-						<div className="col-12 social padding">
+						<div className="col-12 social">
 							<a href="#"><i className="fab fa-facebook"></i></a>
 							<a href="#"><i className="fab fa-twitter"></i></a>
 							<a href="#"><i className="fab fa-google-plus-g"></i></a>

@@ -41,7 +41,7 @@ class Navigation extends Component {
 				    </ul>
 				    <form className="form-inline my-2 my-lg-0">
 				      <input className="form-control mr-sm-2" id="inputsearch" type="search" placeholder="Search..." aria-label="Search" />
-				      <button className="btn btn-outline-primary my-2 my-sm-0"  type="submit"><i className="fa fa-search"></i></button>
+				      <button className="btn btn-primary my-2 my-sm-0"  type="submit"><i className="fa fa-search"></i></button>
 				    </form>
 						<div className="dropdown ml-auto">
 							<button className="btn btn-primary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">

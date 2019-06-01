@@ -1,5 +1,7 @@
 import React from 'react';
 import {Link} from 'react-router-dom';
+import {formatMoney} from "./../../format/priceFormatter";
+
 
 function CartTotals ({value}) {
     const {cartTotal, clearCart} = value;
@@ -16,7 +18,7 @@ function CartTotals ({value}) {
                         </Link>
                         <h5>
                             <span className="text-title">total: </span>
-                            <strong> ${cartTotal}</strong>
+                            <strong>{formatMoney(cartTotal)} đ</strong>
                         </h5>
                     </div>
                 </div>

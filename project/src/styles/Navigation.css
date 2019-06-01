@@ -6,14 +6,14 @@
 	/*position: fixed;
 	width: 100%;
 	z-index: 21;*/
-	background-color: #c7c7c7 !important;
 }
 .navlink {
-	color: #ffffff !important;
+	color: #5d5d5d !important;
 }
 .navlink:hover {
-	color: #000000 !important;
-	border-bottom: 2px solid #000000;
+	color: #5d5d5d !important;
+	border-bottom: 2px solid #5d5d5d;
+	font-weight: bold;
 }
 
 /* media queries*/
@@ -27,7 +27,6 @@
 	}
 	.navbar-expand-lg {
 		position: relative;
-		background-color: #c7c7c7 !important;
 	}
 }
 @media only screen and (min-width: 768px) {
@@ -39,7 +38,6 @@
 	}
 	.navbar-expand-lg {
 		position: relative;
-		background-color: #c7c7c7 !important;
 	}
 }
 @media only screen and (min-width: 1024px){
@@ -50,9 +48,8 @@
 		font-size: 75%;
 	}
 	.navbar-expand-lg {
-		/*position: fixed;
-		width: 100%;
+		position: relative;
+		/*width: 100%;
 		z-index: 21;*/
-		background-color: #c7c7c7 !important;
 	}
 }
