@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import {Switch,Route} from 'react-router-dom';
 import Slide from './Slide';
-import '../styles/Home.css';
+import '../../styles/Home.css';
 import TextBlog from './TextBlog';
 import HomeProducts from './HomeProducts';
 import HotDeals from './HotDeals';

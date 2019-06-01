@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import '../styles/ProductList.css';
+import '../../styles/ProductList.css';
 import Axios from 'axios';
 import {Link} from 'react-router-dom';
-import {formatMoney} from "./../format/priceFormatter";
+import {formatMoney} from "../../format/priceFormatter";
 
 class ProductList extends Component {
 	constructor(props) {
@@ -30,15 +30,16 @@ class ProductList extends Component {
 						<div className="card">
 							<div className="img-container p-5"  >
 								<Link to={ `/details/${product.id}`}>
-									<img className="card-img-top" src={ require(`../${product.img}`)}/>
+									<img className="card-img-top" src={ require(`../../${product.img}`)}/>
 								</Link>
 							</div>
 						</div>
-						<div className="card-footer d-flex justify-content-between">
-							<p className="align-self-center mb-0">{product.name}</p>
-						</div>
-						<div className="card-footer text-center d-flex justify-content-between">
+						<div className="card-footer text-center">
+							<Link to={ `/details/${product.id}`}>
+								<h5 className="align-self-center mb-0">{product.name}</h5>
+							</Link>
 							<h5 className="text-red text-danger font-italic mb-0">{formatMoney(product.price)} đ</h5>
+							<h6 className="text-muted">{product.description}</h6>
 						</div>
 					</div>
 				)

@@ -15,8 +15,7 @@ class Cart extends Component {
                         const {cart} = value;
                         if (cart.length > 0) {
                             return (
-                                <div className="container mt-4">
-                                    <h4 className="text-capitalize font-weight text-center mb-4">your cart</h4>
+                                <div className="container mt-5 border">
                                     <CartColumns />
                                     <CartList value={value} />
                                     <CartTotals value={value} />

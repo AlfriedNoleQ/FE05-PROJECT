@@ -2,16 +2,16 @@ import React, { Component } from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.min.js';
 import $ from "jquery";
-import '../styles/HomeProducts.css';
+import '../../styles/HomeProducts.css';
 import Axios from 'axios';
 import {Link} from 'react-router-dom';
-import {formatMoney} from "./../format/priceFormatter";
+import {formatMoney} from "../../format/priceFormatter";
 
-class HotDeals extends Component {
+class HomeProducts extends Component {
 	constructor(props) {
 		super(props);
 		this.state = {
-			hotDeals: [],
+			homeProducts: [],
 		};
 	}
 
@@ -23,7 +23,7 @@ class HotDeals extends Component {
 		}).then(response => {
 			console.log(response);
 			this.setState ({
-				hotDeals: response.data.slice(0,8)
+				homeProducts: response.data.slice(0,8)
 			});
 		}).catch (err => {
 			console.log(err);
@@ -31,13 +31,13 @@ class HotDeals extends Component {
 	}
 
 	render() {
-		let list = this.state.hotDeals.map((item)=>{
+		let list = this.state.homeProducts.map((item)=>{
 					return(
 						<div className="col-12 mx-auto col-md-6 col-lg-3 my-3">
 							<div className="card">
 								<div className="img-container p-5">
 									<Link to={ `/details/${item.id}`}>
-										<img className="card-img-top" src={ require(`../${item.img}`)}/>
+										<img className="card-img-top" src={ require(`../../${item.img}`)}/>
 									</Link>
 								</div>
 							</div>
@@ -55,7 +55,7 @@ class HotDeals extends Component {
 				<div className="container-fluid">
 					<div className="container">
 						<div className="content text-center">
-							<span className="d-inline-block title">HOT DEALS</span>
+							<span className="d-inline-block title">NEW PRODUCTS</span>
 						</div>
 					</div>
 				</div>
@@ -74,4 +74,4 @@ class HotDeals extends Component {
 	}
 }
 
-export default HotDeals;
+export default HomeProducts;
