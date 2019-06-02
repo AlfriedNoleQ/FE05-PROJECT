@@ -103,18 +103,41 @@
   ],
 
   "users" : [
-
+    
   ],
 
   "admins" : [
-      
+      {
+        "id": 1,
+        "username": "admin",
+        "pass": "1"
+      }
   ],
+
   "blogPosts" : [
       {
         "id": 1,
-        "img":"",
+        "img":"images/blog/post1.jpg",
         "blogTitle": "Here is my blog",
-        "content": "Lorem ipsum dolor sit amet, consectetur latid adipisicing elit, sed do eiusmod ran tempor edne incididunt ut labore et adim dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur latid adipisicing de elit, sed do eiusmod ran tempor edne incididunt ut labore et adim eru dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur latid adipisicing de elit, sed do eiusmod ran tempor edne incididunt ut labore et adim dolore magna aliqua. Lorem ipsum dolor sit amet."
+        "content": "Lorem ipsum dolor sit amet, consectetur latid adipisicing elit, sed do eiusmod ran tempor edne incididunt ut labore et adim dolore magna aliqua."
+      },
+      {
+        "id": 2,
+        "img":"images/blog/post2.jpg",
+        "blogTitle": "Here is my blog",
+        "content": "Lorem ipsum dolor sit amet, consectetur latid adipisicing elit, sed do eiusmod ran tempor edne incididunt ut labore et adim dolore magna aliqua."
+      },
+      {
+        "id": 3,
+        "img":"images/blog/post3.jpg",
+        "blogTitle": "Here is my blog",
+        "content": "Lorem ipsum dolor sit amet, consectetur latid adipisicing elit, sed do eiusmod ran tempor edne incididunt ut labore et adim dolore magna aliqua."
+      },
+      {
+        "id": 4,
+        "img":"images/blog/post4.jpg",
+        "blogTitle": "Here is my blog",
+        "content": "Lorem ipsum dolor sit amet, consectetur latid adipisicing elit, sed do eiusmod ran tempor edne incididunt ut labore et adim dolore magna aliqua."
       }
   ]
 }

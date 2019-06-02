@@ -59,7 +59,7 @@ class Navigation extends Component {
 							</div>
 						</div>
 						<Link to="/cart" className="ml-4 mr-5">
-							<button className="btn btn-outline-success">
+							<button className="btn btn-outline-success cart">
 								CART -<i class="fas fa-shopping-cart ml-1 mr-1"></i>(0)
 							</button>
 						</Link>

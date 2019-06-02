@@ -22,7 +22,7 @@
 	.nav-item>.nav-link, #inputsearch, .form-inline>button{
 		font-size: 100%;
 	}
-	.dropdown button, .cart {
+	.dropdown>button, .cart {
 		font-size: 100%;
 	}
 	.navbar-expand-lg {
@@ -33,7 +33,7 @@
 	.nav-item>.nav-link, #inputsearch, .form-inline>button{
 		font-size: 75%;
 	}
-	.dropdown button, .cart {
+	.dropdown>button, .cart {
 		font-size: 55%;
 	}
 	.navbar-expand-lg {
@@ -44,7 +44,7 @@
 	.nav-item>.nav-link, #inputsearch, .form-inline>button{
 		font-size: 100%;
 	}
-	.dropdown button, .cart {
+	.dropdown>button, .cart {
 		font-size: 75%;
 	}
 	.navbar-expand-lg {
