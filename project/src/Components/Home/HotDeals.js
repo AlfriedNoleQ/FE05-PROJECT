@@ -41,11 +41,12 @@ class HotDeals extends Component {
 									</Link>
 								</div>
 							</div>
-							<div className="card-footer d-flex justify-content-between">
-								<p className="align-self-center mb-0">{item.name}</p>
-							</div>
-							<div className="card-footer text-center d-flex justify-content-between">
+							<div className="card-footer text-center">
+								<Link to={ `/details/${item.id}`}>
+									<h5 className="align-self-center mb-0">{item.name}</h5>
+								</Link>
 								<h5 className="text-red text-danger font-italic mb-0">{formatMoney(item.price)} đ</h5>
+								<h6 className="text-muted">{item.description}</h6>
 							</div>
 						</div>
 					)
