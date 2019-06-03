@@ -9,3 +9,49 @@ footer {
 hr {
 	border-top: 1px solid #d5d5d5;
 }
+.footer {
+	max-width: 100%;
+}
+.navbar-footer {
+	background-color: #24292d !important;
+}
+ul {
+	list-style: none;
+	display: block;
+}
+li {
+	display: list-item;
+	display: block;
+}
+.social-links {
+	overflow: hidden;
+}
+.social-links li a {
+    display: block;
+    width: 30px;
+    height: 30px;
+    text-decoration: none;
+    position: relative;
+    border-radius: 50%;
+    margin-right: 5px;
+    -webkit-transition: background-color 0.3s ease-in;
+    transition: background-color 0.3s ease-in;
+}
+.social-links li.fb a {
+	background: url(./../images/social/fb-brand.png) no-repeat center #355599;
+}
+.social-links li.twt a {
+	background: url(./../images/social/twt-brand.png) no-repeat center #0fccf4;
+}
+.social-links li.fk a {
+	background: url(./../images/social/fk-brand.png) no-repeat center #e0133a;
+}
+.social-links li.rss a {
+	background: url(./../images/social/rss-brand.png) no-repeat center #e0133a;
+}
+.social-links li.vm a {
+	background: url(./../images/social/vm-brand.png) no-repeat center #e0133a;
+}
+.social-links li.gplus a {
+	background: url(./../images/social/gplus-brand.png) no-repeat center #e0133a;
+}

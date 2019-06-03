@@ -48,6 +48,12 @@ class HotDeals extends Component {
 								<h5 className="text-red text-danger font-italic mb-0">{formatMoney(item.price)} đ</h5>
 								<h6 className="text-muted">{item.description}</h6>
 							</div>
+							<div className="btn-cart text-center padding">
+								<button 
+								className="btn btn-outline-primary">
+								<i class="fas fa-shopping-cart"> Add to cart</i>
+								</button>
+							</div>
 						</div>
 					)
 				});
@@ -56,7 +62,7 @@ class HotDeals extends Component {
 				<div className="container-fluid">
 					<div className="container">
 						<div className="content text-center">
-							<span className="d-inline-block title">HOT DEALS</span>
+							<span className="d-inline-block title font-weight-bold">HOT DEALS</span>
 						</div>
 					</div>
 				</div>

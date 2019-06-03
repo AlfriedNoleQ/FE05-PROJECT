@@ -5,9 +5,9 @@ import '../../styles/Home.css';
 import TextBlog from './TextBlog';
 import HomeProducts from './HomeProducts';
 import HotDeals from './HotDeals';
-import Social from './Social';
 import Banner from './Banner';
 import BlogPosts from './BlogPosts';
+import NewLetter from './NewLetter';
 
 class Home extends Component {
 	render() {
@@ -20,7 +20,7 @@ class Home extends Component {
 					<Banner/>
 					<HotDeals/>
 					<BlogPosts/>
-					<Social/>
+					<NewLetter/>
 				</React.Fragment>
 			</div>
 		);

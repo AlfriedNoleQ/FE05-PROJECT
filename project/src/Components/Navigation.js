@@ -18,23 +18,23 @@ class Navigation extends Component {
 					</Link>
 				  <div className="collapse navbar-collapse" id="navbarTogglerDemo03">
 				    <ul className="navbar-nav mr-auto mt-2 mt-lg-0">
-				      <li className="nav-item active ml-5">
-								<Link to="/"className="nav-link">
+				      <li className="nav-item active">
+								<Link to="/"className="nav-link navlink">
                   HOME
                 </Link>
 				      </li>
 				      <li className="nav-item">
-								<Link to="/products"className="nav-link">
+								<Link to="/products"className="nav-link navlink">
                   PRODUCTS
                 </Link>
 				      </li>
 				      <li className="nav-item">
-								<Link to="/guide"className="nav-link">
+								<Link to="/guide"className="nav-link navlink">
                   GUIDE
                 </Link>
 				      </li>
 							<li className="nav-item mr-auto">
-								<Link to="/blog"className="nav-link">
+								<Link to="/blog"className="nav-link navlink">
                   BLOG
                 </Link>
 				      </li>

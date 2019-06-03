@@ -1,0 +1,12 @@
+.newletter {
+	background-color: #419df4;
+}
+.letter-title {
+	font-size: 150%;
+}
+.padding {
+	padding-bottom: 2rem;
+}
+.form-control {
+	position: relative;
+}
