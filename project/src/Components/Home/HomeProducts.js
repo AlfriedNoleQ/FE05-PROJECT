@@ -33,11 +33,11 @@ class HomeProducts extends Component {
 	render() {
 		let list = this.state.homeProducts.map((item)=>{
 					return(
-						<div className="col-12 mx-auto col-md-6 col-lg-3 my-3">
+						<div className="container col-12 mx-auto col-md-6 col-lg-3 my-3">
 							<div className="card">
 								<div className="img-container p-5">
 									<Link to={ `/details/${item.id}`}>
-										<img className="card-img-top" src={ require(`../../${item.img}`)}/>
+										<img className="card-img-top img" src={ require(`../../${item.img}`)}/>
 									</Link>
 								</div>
 							</div>
@@ -48,6 +48,12 @@ class HomeProducts extends Component {
 								<h5 className="text-red text-danger font-italic mb-0">{formatMoney(item.price)} đ</h5>
 								<h6 className="text-muted">{item.description}</h6>
 							</div>
+							<div className="btn-cart text-center padding">
+								<button 
+								className="btn btn-outline-primary">
+								<i class="fas fa-shopping-cart"> Add to cart</i>
+								</button>
+							</div>
 						</div>
 					)
 				});
@@ -57,7 +63,7 @@ class HomeProducts extends Component {
 				<div className="container-fluid">
 					<div className="container">
 						<div className="content text-center">
-							<span className="d-inline-block title">NEW PRODUCTS</span>
+							<span className="d-inline-block title font-weight-bold">NEW PRODUCTS</span>
 						</div>
 					</div>
 				</div>
