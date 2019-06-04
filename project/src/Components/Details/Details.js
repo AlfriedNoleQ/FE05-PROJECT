@@ -7,7 +7,7 @@ class Details extends Component {
 		super(props);
 		const id = this.props.match.params.id;
 		this.state = {
-      id
+      		id
 		}
 	}
 		
