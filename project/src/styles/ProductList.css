@@ -14,9 +14,9 @@
     transition: all is linear;
 }
 
-.card-footer:hover {
+/* .card-footer:hover {
     background: rgba(247, 247, 247);
-}
+} */
 
 .img-container {
     position: relative;
