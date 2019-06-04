@@ -16,7 +16,7 @@ class Details extends Component {
 			<div>
 				<React.Fragment>
 					<ProductDetails id={this.state.id} />
-          <Comment />
+          			<Comment />
 				</React.Fragment>
 			</div>
 		);
