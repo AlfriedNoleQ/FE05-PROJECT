@@ -1,6 +1,7 @@
 import React from 'react';
 import {Link} from 'react-router-dom';
 import {formatMoney} from "../../format/priceFormatter";
+import StripeCheckout from 'react-stripe-checkout';
 
 function CartTotals ({value}) {
     const {cartTotal, clearCart} = value;
@@ -22,6 +23,11 @@ function CartTotals ({value}) {
                                 checkout
                             </button>
                         </Link> <br/>
+                        <StripeCheckout 
+                            className="text-uppercase mt-1 mb-3 mr-4" 
+                            label="Pay with card"
+                        /> 
+                        <br/>
                         <h5 className="mr-3">
                             <span className="text-title">total: </span>
                             <strong> <font color="red">{formatMoney(cartTotal)} Đ</font></strong>
