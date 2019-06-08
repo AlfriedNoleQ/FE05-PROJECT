@@ -8,7 +8,7 @@ function CartTotals ({value}) {
     return (
         <div>
             <div className="container">
-                <div className="row border-top">
+                <div className="row">
                     <div className="col-2 mt-2 ml-1">
                         <Link to="/products">
                             <button className="btn btn-danger text-uppercase mt-3 mb-3 px-5 mr-4" 
@@ -26,7 +26,7 @@ function CartTotals ({value}) {
                         <StripeCheckout 
                             className="text-uppercase mt-1 mb-3 mr-4" 
                             label="Pay with card"
-                        /> 
+                        />
                         <br/>
                         <h5 className="mr-3">
                             <span className="text-title">total: </span>

@@ -5,8 +5,15 @@ import {Link} from 'react-router-dom';
 import '../styles/Navigation.css';
 import logo from '../images/htq.png';
 import {ProductConsumer} from '../context';
+import {connect} from 'react-redux';
 
 class Navigation extends Component {
+	search = (event) => {
+		if (event.key ==='Enter') {
+			this.props.dispatch({ type: 'SET_SEARCH', payload: event.target.value });
+		}
+	}
+
 	render() {
 		return(
 			<ProductConsumer>
@@ -44,12 +51,12 @@ class Navigation extends Component {
 											</Link>
 										</li>
 									</ul>
-									<form className="form-inline my-2 my-lg-0">
+									<div className="form-inline my-2 my-lg-0">
 										<div class="container-1">
 												<span class="icon"><i class="fa fa-search"></i></span>
-												<input type="search" id="search" placeholder="Search..." />
+												<input type="search" id="search" name="search" placeholder="Search..." onKeyUp={ this.search } />
 										</div>
-									</form>
+									</div>
 									<div className="dropdown ml-auto">
 										<button class="btn btn-outline-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
 										<i class="fas fa-user mr-3"></i>ACCOUNT
@@ -78,4 +85,4 @@ class Navigation extends Component {
 	}
 }
 
-export default Navigation;
+export default connect()(Navigation);

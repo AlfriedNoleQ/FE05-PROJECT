@@ -16,18 +16,18 @@ class Cart extends Component {
                         if (cart.length > 0) {
                             return (
                                 <div className="container" style={{paddingTop: '2rem'}}>
-                                    <div className="card shopping-cart">
+                                    <div className="card-cart">
                                         <div className="card-header bg-dark text-light">
                                             <i className="fa fa-shopping-cart pr-2" aria-hidden="true"></i>
                                             Your Cart
                                             <div className="clearfix"></div>
                                         </div>
                                     </div>
-                                    <div className="card-body">
+                                    <div className="card-body border">
                                         <CartColumns />
                                         <CartList value={value} />
                                     </div>
-                                    <div className="card-footer">
+                                    <div className="card-footer border">
                                         <div className="pull-right" style={{margin: '10px'}}>
                                             <div className="pull-right" style={{margin: '5px'}}>
                                                 <CartTotals value={value} />

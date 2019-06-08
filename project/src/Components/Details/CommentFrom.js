@@ -85,7 +85,7 @@ class CommentForm extends Component {
                     onChange={this.handleFieldChange}
                     value={this.state.comment.name}
                     className="form-control"
-                    placeholder="😎 Your Name"
+                    placeholder="Your Name"
                     name="name"
                     type="text"
                     />
@@ -96,7 +96,7 @@ class CommentForm extends Component {
                     onChange={this.handleFieldChange}
                     value={this.state.comment.message}
                     className="form-control"
-                    placeholder="💬 Your Comment"
+                    placeholder="💬Your Comment"
                     name="message"
                     rows="5"
                     />
@@ -106,7 +106,7 @@ class CommentForm extends Component {
 
                 <div className="form-group">
                     <button disabled={this.state.loading} className="btn btn-primary">
-                    Comment &#10148;
+                    Send &#10148;
                     </button>
                 </div>
                 </form>

@@ -40,16 +40,18 @@ class Comment extends Component {
 	render() {
 
 		return(
-			<div className="row border mx-auto text-slanted my-5 bg-light shadow">
-				<div className="col-4 pt-3 border-right">
-					<h6>Say something about the product: </h6>
-					<CommentFrom addComment={this.addComment} />
-				</div>
-				<div className="col-8 pt-3">
-					<CommentList 
-					loading={this.state.loading}
-					comments={this.state.comments}	  
-					/>
+			<div className="container-fluid">
+				<div className="row border mx-auto text-slanted my-5 bg-light shadow">
+					<div className="col-4 pt-3 border-right">
+						<h6>Your Rating: </h6>
+						<CommentFrom addComment={this.addComment} />
+					</div>
+					<div className="col-8 pt-3">
+						<CommentList 
+						loading={this.state.loading}
+						comments={this.state.comments}	  
+						/>
+					</div>
 				</div>
 			</div>
 		);

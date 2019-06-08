@@ -1,5 +1,6 @@
 export const ADD_BRAND_TO_FILTER = 'ADD_BRAND_TO_FILTER';
 export const REMOVE_BRAND_FROM_FILTER = 'REMOVE_BRAND_FROM_FILTER';
+export const GET_PRODUCTS = 'GET_PRODUCTS';
 
 export const addBrandToFilter = brand => {
     return {
@@ -34,5 +35,11 @@ export const orderByDesc =  () => {
 export const clearOrderBy = () => {
     return {
         type: CLEAR_ORDER_BY_PRICE
+    }
+};
+
+export const getProducts = () => {
+    return {
+        type: GET_PRODUCTS
     }
 };

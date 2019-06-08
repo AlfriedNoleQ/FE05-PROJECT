@@ -37,7 +37,7 @@ class ProductDetails extends Component {
                                 <img src={require(`../../${product.img}`)} className="img-fluid" alt="product" />
                             </div>
                             <div className="col-10 mx-auto col-md-6 my-3 text-capitalize">
-                                <h3>Company: {product.company}</h3>
+                                <h3>Company: {product.brand}</h3>
                                 <h3 className="text-red">Price: <font color="red">{formatMoney(product.price)}</font> Đ</h3>
                                 <h3>Product Info:</h3><div className="mb-3" dangerouslySetInnerHTML={{__html: product.info}} />
                                 <div>
