@@ -1,29 +1,34 @@
 import React, { Component } from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import '../../styles/ProductList.css';
-import Axios from 'axios';
 import {Link} from 'react-router-dom';
 import {formatMoney} from "../../format/priceFormatter";
 import {ProductConsumer} from '../../context';
+import {connect} from 'react-redux';
+import {brandFilter} from "../../pipes/brandFilter";
+import {orderByFilter} from "../../pipes/orderByFilter";
 
 class ProductList extends Component {
 	constructor(props) {
 		super(props);
+		let products = this.props.products;
 		this.state = {
-			products: [],
+			products,
 		};
 	}
 
-	componentDidMount(){
-		Axios.get('http://localhost:3000/products')
-		.then(response => {
-			console.log(response.data);
-			this.setState({products: response.data.slice(0,10)});
-		});
-	};
-
+	componentWillReceiveProps(props){
+		if (this.props.products !== props.products) {
+			let products = props.products;
+			if (props.search) {
+				products = products.filter(({ name }) => name.includes(this.props.search) );
+			}
+			this.setState({ products });
+		}
+	}
+	
 	render() {
-		const {products} = this.state;
+		const { products } = this.state;
 		const productList = products.length ? (
 			products.map(product => {
 				return (
@@ -40,9 +45,18 @@ class ProductList extends Component {
 								</Link>
 								<h5 className="text-red text-danger font-italic mb-0">{formatMoney(product.price)} đ</h5>
 								<h6 className="text-muted">{product.description}</h6>
-								<button className="btn btn-outline-success" >
-									<i class="fas fa-cart-plus"></i>
-								</button>
+								<ProductConsumer>
+									{value => {
+										return(
+											<button
+												className="btn btn-outline-success" 
+												disabled={product.inCart?true:false} onClick={() => {
+												value.addToCart(Number(product.id)); product.inCart = true;}}>
+												{product.inCart ? <i class="fas fa-cart-arrow-down"/> : <i class="fas fa-cart-plus"/>}
+											</button>
+										)
+									}}
+								</ProductConsumer>
 							</div>
 						</div>
 					</div>
@@ -50,24 +64,39 @@ class ProductList extends Component {
 			})
 		) : (
 			<div className="center"></div>
-		)
-    return (
-    	<div className="col-lg-9">
-			<div className="row mb-3">
-				<div className="col-12 d-none d-lg-block d-xl-block">
-					<div className="card ">
-						<div className="card-header d-flex justify-content">
-							<h3 className="mr-3">Products: </h3>
+		);
+		return (
+			<div className="col-lg-9">
+				<div className="row mb-2">
+					<div className="col-12 d-none d-lg-block d-xl-block">
+						<div className="card-product border">
+							<div className="card-header d-flex justify-content">
+								<h3 className="mr-3">Products </h3>
+							</div>
 						</div>
 					</div>
 				</div>
+				<div className="row">
+					{productList}
+				</div>
 			</div>
-			<div className="row">
-				{productList}
-			</div>
-    	</div>
-    );
+		);
   }
 }
 
-export default ProductList;
+export default connect(
+	(state) => {
+		const brands = state.brandFilter;
+		const orderBy = state.orderBy;
+	
+		const filterByBrandArr = brandFilter(state.shop.products, brands);
+		const filterByOrderArr = orderByFilter(filterByBrandArr, orderBy);
+
+		let filterByName = filterByOrderArr;
+		if (state.shop.search) {
+			filterByName = filterByName.filter(({ name }) => name.includes(state.shop.search) );
+		}
+
+		return { products: filterByName }
+	},
+)(ProductList);

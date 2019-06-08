@@ -13,7 +13,7 @@ import SignIn from '../src/Components/SignIn';
 import SignUp from '../src/Components/SignUp';
 import Checkout from '../src/Components/Checkout/Checkout';
 import {Provider} from 'react-redux';
-import {createStore } from 'redux';
+import {createStore} from 'redux';
 import rootReducer from './reducers';
 
 export const  store = createStore(rootReducer, window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__());
@@ -25,7 +25,7 @@ class App extends Component {
           <Navigation/>
           <Switch>
             <Route exact path="/" component={Home} />
-            <Route path="/products" component={Products} />
+            <Route path="/products" component={Products}/>
             <Route path="/details/:id" component={Details} />
             <Route path="/cart" component={Cart} />
             <Route path="/signin"component={SignIn} />
@@ -39,5 +39,6 @@ class App extends Component {
     )
   }
 }
+
 
 export default App;

@@ -30,35 +30,35 @@ const PriceFilter = ({dispatch}) => {
     };
 
     if(selected) {
-        removeSelected  =  <span onClick={removeFilter} className="text-remove-selected text-right">Remove</span>
+        removeSelected  =  <span onClick={removeFilter} className="text-remove-selected text-right"><i class="fas fa-times"></i></span>
     }
 
 
 
     return (
-        <div className="card">
+        <div className="card-price border">
             <div className="card-header">
                 <h3>Price {removeSelected} </h3>
             </div>
             <ul className="list-group flex-row  flex-wrap" >
                 <li className="list-group-item flex-fill">
-                    <label className="custom-radio-btn"> Low to high
-                        <input
-                                value={ORDER_BY_ASC}
-                                type="radio"
-                                onChange={handleRadioChange}
-                                name="orderByPrice" className="custom-radio-btn__input"/>
-                        <span className="custom-radio-btn__span"></span>
-                    </label>
+                    <input
+                        value={ORDER_BY_ASC}
+                        type="radio"
+                        onChange={handleRadioChange}
+                        name="orderByPrice" className="custom-radio-btn__input"
+                    />
+                    <label className="custom-radio-btn ml-2"> Low to high</label>
+                    <span className="custom-radio-btn__span"></span>
                 </li>
                 <li className="list-group-item flex-fill">
-                    <label className="custom-radio-btn"> High to low
-                        <input
-                            value={ORDER_BY_DESC}
-                            onChange={handleRadioChange}
-                            type="radio" name="orderByPrice" className="custom-radio-btn__input"/>
-                        <span className="custom-radio-btn__span"></span>
-                    </label>
+                    <input
+                        value={ORDER_BY_DESC}
+                        onChange={handleRadioChange}
+                        type="radio" name="orderByPrice" className="custom-radio-btn__input"
+                    />
+                    <label className="custom-radio-btn ml-2"> High to low</label>
+                    <span className="custom-radio-btn__span"></span>
                 </li>
             </ul>
         </div>
