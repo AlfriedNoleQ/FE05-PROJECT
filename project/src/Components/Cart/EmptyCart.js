@@ -5,7 +5,7 @@ import emptycart from '../../images/emptycart.gif';
 class EmptyCart extends Component {
     render() {
         return(
-            <div className="container mt-4">
+            <div className="container mt-5 mb-5">
                 <div className="row">
                     <div className="col-10 mx-auto text-center text-title">
                         <img src={emptycart} alt="emptycart" height="300" width="550" />

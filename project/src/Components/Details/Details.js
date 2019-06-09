@@ -13,12 +13,10 @@ class Details extends Component {
 		
 	render() {
 		return(
-			<div>
-				<React.Fragment>
-					<ProductDetails id={this.state.id} />
-          			<Comment />
-				</React.Fragment>
-			</div>
+			<React.Fragment>
+				<ProductDetails id={this.state.id} />
+				<Comment />
+			</React.Fragment>
 		);
 	}
 }

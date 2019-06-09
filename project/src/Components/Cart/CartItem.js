@@ -30,7 +30,7 @@ function CartItem ({item, value}) {
                 </div>
             </div>
             <div className="col-10 mx-auto col-lg-2">
-                <strong>{formatMoney(total)} Đ</strong>
+                <strong>{formatMoney(total)} đ</strong>
             </div>
         </div>
     )

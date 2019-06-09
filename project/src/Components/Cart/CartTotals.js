@@ -30,7 +30,7 @@ function CartTotals ({value}) {
                         <br/>
                         <h5 className="mr-3">
                             <span className="text-title">total: </span>
-                            <strong> <font color="red">{formatMoney(cartTotal)} Đ</font></strong>
+                            <strong> <font color="red">{formatMoney(cartTotal)} đ</font></strong>
                         </h5>
                     </div>
                 </div>

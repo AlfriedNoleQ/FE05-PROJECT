@@ -15,7 +15,7 @@ class Cart extends Component {
                         const {cart} = value;
                         if (cart.length > 0) {
                             return (
-                                <div className="container" style={{paddingTop: '2rem'}}>
+                                <div className="container" style={{paddingTop: '2rem', paddingBottom: '3rem'}}>
                                     <div className="card-cart">
                                         <div className="card-header bg-dark text-light">
                                             <i className="fa fa-shopping-cart pr-2" aria-hidden="true"></i>
@@ -28,10 +28,8 @@ class Cart extends Component {
                                         <CartList value={value} />
                                     </div>
                                     <div className="card-footer border">
-                                        <div className="pull-right" style={{margin: '10px'}}>
-                                            <div className="pull-right" style={{margin: '5px'}}>
-                                                <CartTotals value={value} />
-                                            </div>
+                                        <div className="cart-total" style={{margin: '10px'}}>
+                                            <CartTotals value={value} />
                                         </div>
                                     </div>
                                 </div>
