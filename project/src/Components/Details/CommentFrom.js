@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import'../../styles/CommentForm.css';
 
 class CommentForm extends Component {
     constructor(props) {
@@ -80,35 +81,44 @@ class CommentForm extends Component {
 		return(
             <React.Fragment>
                 <form method="post" onSubmit={this.onSubmit}>
-                <div className="form-group">
-                    <input
-                    onChange={this.handleFieldChange}
-                    value={this.state.comment.name}
-                    className="form-control"
-                    placeholder="Your Name"
-                    name="name"
-                    type="text"
-                    />
-                </div>
+                    <div>
+                        <div class="starrating risingstar d-flex justify-content-center flex-row-reverse">
+                            <input type="radio" id="star5" name="rating" value="5" /><label for="star5" title="5 star"/>
+                            <input type="radio" id="star4" name="rating" value="4" /><label for="star4" title="4 star"/>
+                            <input type="radio" id="star3" name="rating" value="3" /><label for="star3" title="3 star"/>
+                            <input type="radio" id="star2" name="rating" value="2" /><label for="star2" title="2 star"/>
+                            <input type="radio" id="star1" name="rating" value="1" /><label for="star1" title="1 star"/>
+                        </div>
+                    </div>
+                    <div className="form-group">
+                        <input
+                        onChange={this.handleFieldChange}
+                        value={this.state.comment.name}
+                        className="form-control"
+                        placeholder="Your Name"
+                        name="name"
+                        type="text"
+                        />
+                    </div>
 
-                <div className="form-group">
-                    <textarea
-                    onChange={this.handleFieldChange}
-                    value={this.state.comment.message}
-                    className="form-control"
-                    placeholder="💬Your Comment"
-                    name="message"
-                    rows="5"
-                    />
-                </div>
+                    <div className="form-group">
+                        <textarea
+                        onChange={this.handleFieldChange}
+                        value={this.state.comment.message}
+                        className="form-control"
+                        placeholder="💬Your Comment"
+                        name="message"
+                        rows="5"
+                        />
+                    </div>
 
-                {this.renderError()}
+                    {this.renderError()}
 
-                <div className="form-group">
-                    <button disabled={this.state.loading} className="btn btn-primary">
-                    Send &#10148;
-                    </button>
-                </div>
+                    <div className="form-group">
+                        <button disabled={this.state.loading} className="btn btn-primary">
+                        Send &#10148;
+                        </button>
+                    </div>
                 </form>
             </React.Fragment>
 		);

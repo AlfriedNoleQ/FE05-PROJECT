@@ -6,7 +6,7 @@ class Default extends Component {
     render() {
         return(
             <div>
-                <div className="container mt-5">
+                <div className="container mt-5 mb-5">
                     <div className="col-10 mx-auto text-center text-title">
                         <img src={pnf} alt="404" height="300" width="450" />
                         <h6 className="text-uppercase mt-2">Go back to <Link to="/">home</Link></h6>

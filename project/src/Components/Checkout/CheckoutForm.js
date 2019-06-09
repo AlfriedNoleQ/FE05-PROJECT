@@ -8,23 +8,40 @@ class CheckoutForm extends Component {
                 <div className="row mt-3 border">
                     <div className="col-md-6 mt-3">
                         <label for="First Name">First Name: </label>
-                        <input type="text" />
+                        <input 
+                        className="form-control" 
+                        placeholder="First Name"
+                        name="fname" type="text" 
+                        />
                     </div>
                     <div className="col-md-6 mt-3">
                         <label for="Last Name">Last Name: </label>
-                        <input type="text" />
+                        <input 
+                        className="form-control" 
+                        placeholder="Last Name"
+                        name="lname" type="text" 
+                        />
                     </div>
                     <div className="col-md-12">
                         <label for="Email">Email: </label>
-                        <input type="text" />
+                        <input 
+                        className="form-control" 
+                        placeholder="Email"
+                        name="email" type="text" />
                     </div>
                     <div className="col-md-12">
                         <label for="Phone">Phone Number: </label>
-                        <input type="text" />
+                        <input 
+                        className="form-control" 
+                        placeholder="Phone Number"
+                        name="phone" type="text" />
                     </div>
                     <div className="col-md-12">
                         <label for="Address">Address: </label>
-                        <input type="text" />
+                        <input 
+                        className="form-control" 
+                        placeholder="Address"
+                        name="address" type="text" />
                     </div>
                     <div className="col-xs-12" style={{margin: '20px'}}>
                         <input type="checkbox" id="CustomCheckbox" label="Agree to our terms and policies" style={{margin: '10px'}} />
