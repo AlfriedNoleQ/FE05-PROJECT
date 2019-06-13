@@ -53,71 +53,75 @@ class SignUp extends Component {
 
 	render() {
 		return(
-			<div className="container-fluid text-center">
+        	<div className="container-fluid text-center">
 			<h3 className="padding">New? Register Now!</h3>
 				<div className="container padding">
-					<div className="row">
-						<div className="col">
+					<form onSubmit={this.onSubmit}>
+					  <div class="form-group row">
+					    <label class="col-sm-2 col-form-label">Email: </label>
+					    <div class="col-sm-10">
+					     	<input type="email" 
+							name="email" 
+							className="form-control" 
+							id="exampleInputEmail1" 
+							aria-describedby="emailHelp" 
+							placeholder="Enter email..."
+							onChange={this.onChange} />
+					    </div>
+					  </div>
+					  <div class="form-group row">
+					    <label class="col-sm-2 col-form-label">Username: </label>
+					    <div class="col-sm-10">
+					     	<input type="text" 
+							name="username" 
+							className="form-control" 
+							id="usn"
+							placeholder="User name..."
+							onChange={this.onChange} />
+					    </div>
+					  </div>
+					  <div class="form-group row">
+					    <label for="inputPassword" class="col-sm-2 col-form-label">Password: </label>
+					    <div class="col-sm-10">
+					    	<input type="password" 
+							name="password" 
+							className="form-control" 
+							id="exampleInputPassword1" 
+							placeholder="Password..." 
+							onChange={this.onChange} />
+					    </div>
+					  </div>
+					  <div class="form-group row">
+					    <label class="col-sm-2 col-form-label">Address: </label>
+					    <div class="col-sm-10">
+					     	<input type="text" 
+							name="address" 
+							className="form-control" 
+							id="exampleInputPassword1" 
+							placeholder="Address..."
+							onChange={this.onChange} />
+					    </div>
+					  </div>
+					  <div class="form-group row">
+					    <label class="col-sm-2 col-form-label">Phone: </label>
+					    <div class="col-sm-10">
+					     	<input type="text" 
+							name="phone" 
+							className="form-control" 
+							id="exampleInputPassword1" 
+							placeholder="phone..."
+							onChange={this.onChange} />
+					    </div>
+					  </div>
+					  	<div className="form-group form-check">
+							<input type="checkbox" className="form-check-input" id="exampleCheck1" />
+							<label className="form-check-label" for="exampleCheck1">Creat account</label>
 						</div>
-						<form className="col-8" onSubmit={this.onSubmit}>
-							<div className="form-group">
-								<label for="exampleInputEmail1">Email</label>
-								<input type="email" 
-								name="email" 
-								className="form-control" 
-								id="exampleInputEmail1" 
-								aria-describedby="emailHelp" 
-								placeholder="Enter email..."
-								onChange={this.onChange} />
-							</div>
-							<div className="form-group">
-								<label>Username</label>
-								<input type="text" 
-								name="username" 
-								className="form-control" 
-								id="usn"
-								placeholder="User name..."
-								onChange={this.onChange} />
-							</div>
-							<div className="form-group">
-								<label for="exampleInputPassword1">Password</label>
-								<input type="password" 
-								name="password" 
-								className="form-control" 
-								id="exampleInputPassword1" 
-								placeholder="Password..." 
-								onChange={this.onChange} />
-							</div>
-							<div className="form-group">
-								<label for="exampleInputPassword1">Address</label>
-								<input type="text" 
-								name="address" 
-								className="form-control" 
-								id="exampleInputPassword1" 
-								placeholder="Address..."
-								onChange={this.onChange} />
-							</div>
-							<div className="form-group">
-								<label for="exampleInputPassword1">Phone</label>
-								<input type="text" 
-								name="phone" 
-								className="form-control" 
-								id="exampleInputPassword1" 
-								placeholder="phone..."
-								onChange={this.onChange} />
-							</div>
-							<div className="form-group form-check">
-								<input type="checkbox" className="form-check-input" id="exampleCheck1" />
-								<label className="form-check-label" for="exampleCheck1">Creat account</label>
-							</div>
-							<div className="btn-submit">
-								<button type="submit" className="btn btn-outline-success btnSubmit">Submit</button>
-								<button type="submit" className="btn btn-outline-primary btnReset">Reset</button>
-							</div>
-						</form>	
-						<div className="col">
+						<div className="btn-submit">
+							<button type="submit" className="btn btn-outline-success btnSubmit">Submit</button>
+							<button type="submit" className="btn btn-outline-primary btnReset">Reset</button>
 						</div>
-					</div>
+					</form>
 				</div>
 			</div>
 		);

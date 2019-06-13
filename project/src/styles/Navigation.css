@@ -7,6 +7,9 @@
 	width: 100%;
 	z-index: 21;*/
 }
+.account {
+	border-radius: 50px;
+}
 .navlink {
 	color: #5d5d5d !important;
 }
@@ -19,7 +22,7 @@
 /* media queries*/
 
 @media only screen and (min-width: 320px) {
-	.nav-item>.nav-link, #inputsearch, .form-inline>button{
+	.nav-item>.navlink, #inputsearch, .form-inline>button{
 		font-size: 100%;
 	}
 	.dropdown>button, .cart {
@@ -30,7 +33,7 @@
 	}
 }
 @media only screen and (min-width: 768px) {
-	.nav-item>.nav-link, #inputsearch, .form-inline>button{
+	.nav-item>.navlink, #inputsearch, .form-inline>button{
 		font-size: 75%;
 	}
 	.dropdown>button, .cart {
@@ -41,7 +44,7 @@
 	}
 }
 @media only screen and (min-width: 1024px){
-	.nav-item>.nav-link, #inputsearch, .form-inline>button{
+	.nav-item>.navlink, #inputsearch, .form-inline>button{
 		font-size: 100%;
 	}
 	.dropdown>button, .cart {
