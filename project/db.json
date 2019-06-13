@@ -153,7 +153,6 @@
       "total": 0
     }
   ],
-  
   "brands": [
     "canon",
     "nikon",
@@ -161,7 +160,6 @@
     "olympus",
     "fujifilm"
   ],
-
   "users": [
     {
       "email": "huuthangjunior@gmail.com",
@@ -170,9 +168,16 @@
       "address": "Quang Nam",
       "phone": "0123456789",
       "id": 1
+    },
+    {
+      "email": "tantran1104@gmail.com",
+      "username": "quy123123",
+      "password": "dscx2rfdsv",
+      "address": "da nang",
+      "phone": "2145756545",
+      "id": 2
     }
   ],
-
   "admins": [
     {
       "id": 1,
@@ -180,7 +185,6 @@
       "pass": "1"
     }
   ],
-
   "blogPosts": [
     {
       "id": 1,

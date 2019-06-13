@@ -9,7 +9,6 @@ import Products from '../src/Components/Products/Products';
 import Details from './Components/Details/Details';
 import Cart from '../src/Components/Cart/Cart';
 import Footer from '../src/Components/Footer';
-import SignIn from '../src/Components/SignIn';
 import SignUp from '../src/Components/SignUp';
 import Checkout from '../src/Components/Checkout/Checkout';
 import {Provider} from 'react-redux';
@@ -28,7 +27,6 @@ class App extends Component {
             <Route path="/products" component={Products}/>
             <Route path="/details/:id" component={Details} />
             <Route path="/cart" component={Cart} />
-            <Route path="/signin"component={SignIn} />
             <Route path="/signup"component={SignUp} />
             <Route path="/checkout" component={Checkout} />
             <Route component={Default} />
