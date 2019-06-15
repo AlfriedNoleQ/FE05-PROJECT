@@ -6,7 +6,7 @@ import '../../styles/HomeProducts.css';
 import Axios from 'axios';
 import {Link} from 'react-router-dom';
 import {formatMoney} from "../../format/priceFormatter";
-
+import {ProductConsumer} from '../../context';
 class HotDeals extends Component {
 	constructor(props) {
 		super(props);
@@ -31,32 +31,38 @@ class HotDeals extends Component {
 	}
 
 	render() {
-		let list = this.state.hotDeals.map((item)=>{
-					return(
-						<div className="col-12 mx-auto col-md-6 col-lg-3 my-3">
-							<div className="card">
-								<div className="img-container p-5">
-									<Link to={ `/details/${item.id}`}>
-										<img className="card-img-top" src={ require(`../../${item.img}`)}/>
-									</Link>
-								</div>
-							</div>
-							<div className="card-footer text-center">
-								<Link to={ `/details/${item.id}`}>
-									<h5 className="align-self-center mb-0">{item.name}</h5>
-								</Link>
-								<h5 className="text-red text-danger font-italic mb-0">{formatMoney(item.price)} đ</h5>
-								<h6 className="text-muted">{item.description}</h6>
-							</div>
-							<div className="btn-cart text-center padding">
-								<button 
-								className="btn btn-outline-primary">
-								<i class="fas fa-shopping-cart"> Add to cart</i>
-								</button>
-							</div>
+		let list = this.state.hotDeals.map((product)=>{
+			return(
+				<div className="container col-12 col-md-6 col-lg-3 my-3">
+					<div className="card">
+						<div className="img-container p-5">
+							<Link to={ `/details/${product.id}`}>
+								<img className="card-img-top img" src={ require(`../../${product.img}`)}/>
+							</Link>
 						</div>
-					)
-				});
+					<div className="product-card-footer text-center">
+						<Link to={ `/details/${product.id}`}>
+							<h5 className="align-self-center mb-0">{product.name}</h5>
+						</Link>
+						<h5 className="text-red text-danger font-italic mb-0">{formatMoney(product.price)} đ</h5>
+						<h6 className="text-muted">{product.description}</h6>
+					</div>
+					<ProductConsumer>
+						{value => {
+							return(
+								<button
+									className="btn btn-outline-success mb-2" 
+									disabled={product.inCart?true:false} onClick={() => {
+									value.addToCart(Number(product.id)); product.inCart = true;}}>
+									{product.inCart ? 'In cart' : 'Add to cart'}
+								</button>
+							)
+						}}
+					</ProductConsumer>
+					</div>
+				</div>
+			)
+		});
 		return(
 			<div>
 				<div className="container-fluid">

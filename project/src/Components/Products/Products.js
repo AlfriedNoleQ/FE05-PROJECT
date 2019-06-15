@@ -18,7 +18,7 @@ class Products extends Component {
   render() {
     return (
       <React.Fragment>
-        <div className="container" style={{paddingTop: '3rem'}} >
+        <div className="container" style={{paddingTop: '3rem', paddingBottom: '5rem'}} >
           <div className="row">
             <FilterBar/>
             <ProductList search={this.state.search}/>

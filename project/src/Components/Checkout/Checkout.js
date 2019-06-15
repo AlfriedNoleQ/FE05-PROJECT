@@ -10,7 +10,7 @@ class Checkout extends Component {
                 {value => {
                     const {cart} = value;
                     return(
-                        <div className="container mt-3">
+                        <div className="container mt-3 mb-5">
                             <h2 className="text-center text-uppercase mb-4">Payment Information</h2>
                             <div className="row"> 
                                 <div className="col-md-7">

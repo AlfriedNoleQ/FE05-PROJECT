@@ -38,7 +38,7 @@ class ProductDetails extends Component {
                         src={require(`../../${img}`)}
                         className={`img-fluid ${ index === slideIndex ? 'active' : '' }`}
                         alt="product" 
-                        onClick={ () => this.clickSlideImage(index) }/>
+                        onClick={ () => this.clickSlideImage(index) } />
                 </div>
                 )
             );
@@ -62,7 +62,7 @@ class ProductDetails extends Component {
                                     className="img-fluid"
                                     alt="product" />
                             </div>
-                            <div className="col-9 mx-auto col-md-5 my-3 text-capitalize">
+                            <div className="col-9 col-md-5 my-3 text-capitalize">
                                 <h3>Company: {product.brand}</h3>
                                 <h3 className="text-red">Price: <font color="red">{formatMoney(product.price)}</font> đ</h3>
                                 <div className="ml-1 mb-2">
@@ -73,14 +73,14 @@ class ProductDetails extends Component {
                                     <span class="fa fa-star"></span>
                                 </div>
                                 <h3>Product Info:</h3><div className="mb-3" dangerouslySetInnerHTML={{__html: product.info}} />
-                                <div>
-                                    <Link to="/products">
-                                        <button className="btn btn-primary text-uppercase">continue shopping</button>
-                                    </Link>
-                                    <button className="btn btn-success text-uppercase mx-3" disabled={product.inCart?true:false} onClick={() => {
+                                <div className="text-center">
+                                    <button className="btn btn-success text-uppercase mr-3" disabled={product.inCart?true:false} onClick={() => {
                                         value.addToCart(Number(id)); product.inCart = true;}}>
                                         {product.inCart ? 'in cart' : 'add to cart'}
                                     </button>
+                                    <Link to="/products">
+                                        <button className="btn btn-primary text-uppercase">continue shopping</button>
+                                    </Link>
                                 </div>
                             </div>
                         </div>
