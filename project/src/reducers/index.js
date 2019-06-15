@@ -8,3 +8,4 @@ export default combineReducers({
     brandFilter: brandFilterReducer,
     orderBy: orderByPriceReducer
 });
+

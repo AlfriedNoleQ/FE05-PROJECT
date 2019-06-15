@@ -39,7 +39,7 @@ class ProductList extends Component {
 									<img className="card-img-top" src={ require(`../../${product.img}`)}/>
 								</Link>
 							</div>
-							<div className="card-footer text-center">
+							<div className="product-card-footer text-center">
 								<Link to={ `/details/${product.id}`}>
 									<h5 className="align-self-center">{product.name}</h5>
 								</Link>
@@ -56,7 +56,7 @@ class ProductList extends Component {
 									{value => {
 										return(
 											<button
-												className="btn btn-outline-success" 
+												className="btn btn-outline-success mb-2" 
 												disabled={product.inCart?true:false} onClick={() => {
 												value.addToCart(Number(product.id)); product.inCart = true;}}>
 												{product.inCart ? <i class="fas fa-cart-arrow-down"/> : <i class="fas fa-cart-plus"/>}

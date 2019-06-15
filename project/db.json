@@ -108,7 +108,7 @@
       "price": 17659000,
       "brand": "olympus",
       "info": "Cảm biến Live MOS 16MP.<br> Bộ xử lý ảnh True Pic VII.<br> Công nghệ chống rung 5 trục.<br> Ống ngắm điện từ EVF OLED độ phân giải 2.3MP.<br> Chế độ im lặng Silent Mode.<br> Chụp liên tiếp 8.5fps.<br> Có flash cóc.<br> Kết nối: Wifi 802.11b/g/n, USB 2.0, HDMI.<br> OI Share and Live View thông qua Wifi.<br> Quay video Full HD, timelapse 4K.<br> Trọng lượng: 390gr.",
-      "description": "Perfect camera for you",
+      "description": "Perfect camera for you and friends",
       "status": false,
       "inCart": false,
       "count": 0,
@@ -153,7 +153,6 @@
       "total": 0
     }
   ],
-  
   "brands": [
     "canon",
     "nikon",
@@ -161,7 +160,80 @@
     "olympus",
     "fujifilm"
   ],
-
+  "comment": [
+    {
+      "id": 1
+    },
+    {
+      "id": 2
+    },
+    {
+      "id": 3
+    },
+    {
+      "id": 4
+    },
+    {
+      "id": 5
+    },
+    {
+      "id": 6
+    },
+    {
+      "id": 7
+    },
+    {
+      "id": 8
+    },
+    {
+      "id": 9
+    },
+    {
+      "id": 10
+    },
+    {
+      "id": 11
+    },
+    {
+      "id": 12
+    },
+    {
+      "id": 13
+    },
+    {
+      "id": 14
+    },
+    {
+      "id": 15
+    },
+    {
+      "id": 16
+    },
+    {
+      "id": 17
+    },
+    {
+      "id": 18
+    },
+    {
+      "id": 19
+    },
+    {
+      "id": 20
+    },
+    {
+      "id": 21
+    },
+    {
+      "id": 22
+    },
+    {
+      "id": 23
+    },
+    {
+      "id": 24
+    }
+  ],
   "users": [
     {
       "email": "huuthangjunior@gmail.com",
@@ -172,7 +244,6 @@
       "id": 1
     }
   ],
-
   "admins": [
     {
       "id": 1,
@@ -180,7 +251,6 @@
       "pass": "1"
     }
   ],
-
   "blogPosts": [
     {
       "id": 1,

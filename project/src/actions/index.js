@@ -43,3 +43,10 @@ export const getProducts = () => {
         type: GET_PRODUCTS
     }
 };
+
+export function addOrder(address) {
+	return {
+		type: "addItem",
+        address
+	}
+}
