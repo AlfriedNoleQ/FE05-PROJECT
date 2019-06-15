@@ -41,7 +41,7 @@ class CommentForm extends Component {
     this.setState({ error: "", loading: true });
 
     let { comment } = this.state;
-    fetch("http://localhost:7777", {
+    fetch("http://localhost:3000/comments", {
         method: "post",
         body: JSON.stringify(comment)
     })
