@@ -41,25 +41,25 @@ class HomeProducts extends Component {
 								<img className="card-img-top img" src={ require(`../../${product.img}`)}/>
 							</Link>
 						</div>
-					<div className="product-card-footer text-center">
-						<Link to={ `/details/${product.id}`}>
-							<h5 className="align-self-center mb-0">{product.name}</h5>
-						</Link>
-						<h5 className="text-red text-danger font-italic mb-0">{formatMoney(product.price)} đ</h5>
-						<h6 className="text-muted">{product.description}</h6>
-					</div>
-					<ProductConsumer>
-						{value => {
-							return(
-								<button
-									className="btn btn-outline-success mb-2" 
-									disabled={product.inCart?true:false} onClick={() => {
-									value.addToCart(Number(product.id)); product.inCart = true;}}>
-									{product.inCart ? 'In cart' : 'Add to cart'}
-								</button>
-							)
-						}}
-					</ProductConsumer>
+						<div className="product-card-footer text-center">
+							<Link to={ `/details/${product.id}`}>
+								<h5 className="align-self-center mb-0">{product.name}</h5>
+							</Link>
+							<h5 className="text-red text-danger font-italic mb-0">{formatMoney(product.price)} đ</h5>
+							<h6 className="text-muted">{product.description}</h6>
+							<ProductConsumer>
+								{value => {
+									return(
+										<button
+											className="btn btn-outline-success mb-2" 
+											disabled={product.inCart?true:false} onClick={() => {
+											value.addToCart(Number(product.id)); product.inCart = true;}}>
+											{product.inCart ? <i class="fas fa-cart-arrow-down"/> : <i class="fas fa-cart-plus"/>}
+										</button>
+									)
+								}}
+							</ProductConsumer>
+						</div>
 					</div>
 				</div>
 			)
@@ -69,9 +69,11 @@ class HomeProducts extends Component {
 			<div>
 				<div className="container-fluid">
 					<div className="container">
-						<div className="content text-center">
-							<span className="d-inline-block title font-weight-bold">NEW PRODUCTS</span>
-						</div>
+						<hr/>
+							<div className="text-center">
+								<span className="d-inline-block title font-weight-bold">NEW PRODUCTS</span>
+							</div>
+						<hr/>
 					</div>
 				</div>
 				<div className="container-fluid py-3">
@@ -81,7 +83,7 @@ class HomeProducts extends Component {
 						</div>
 					</div>
 					<div className="text-center padding">
-						<Link to="/products"><button className="btn btn-outline-success btn-lg">More...</button></Link>
+						<Link to="/products"><button className="btn btn-success btn-lg">More...</button></Link>
 					</div>
 				</div>
 			</div>

@@ -94,8 +94,7 @@ class Navigation extends Component {
 
 											      </div>
 											      <div className="modal-footer d-flex justify-content-center">
-											        <button className="btn btn-outline-primary">Login</button>
-											      </div>
+											        <button className="btn btn-outline-primary">Login</button>											      </div>
 											    </div>
 											  </div>
 											</div>
@@ -116,7 +115,7 @@ class Navigation extends Component {
 
 									<div className="dropdown ml-auto">
 										<button className="btn btn-outline-secondary account dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-										<i className="fas fa-user mr-3"></i>Welcome
+										<i className="fas fa-user mr-3"></i>
 										</button>
 										<div className="dropdown-menu" aria-labelledby="dropdownMenuButton">
 											<Link to="/">

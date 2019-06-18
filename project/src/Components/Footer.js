@@ -17,21 +17,18 @@ class Footer extends Component {
 					<div className="container-fluid padding">
 						<div className="row text-center">
 							<div className="col-md-4">
-								<p>OUR INFORMATION</p>
-								<hr/>
+								<p className="footer-title font-weight-bold">OUR INFORMATION</p>
 								<p>Phone: 0905-000-888</p>
 								<p>Email: dslr@gmail.com</p>
 								<p>Address: Danang, Vietnam</p>
 							</div>
 							<div className="col-md-4">
-								<p>OPEN HOURS</p>
-								<hr/>
+								<p className="footer-title font-weight-bold">OPEN HOURS</p>
 								<p>9:00 am to 18:00 pm</p>
 								<p>Sunday: Close</p>
 							</div>
 							<div className="col-md-4">
-								<p>SERVICE</p>
-								<hr/>
+								<p className="footer-title font-weight-bold">SERVICE</p>
 							</div>
 						</div>
 					</div>

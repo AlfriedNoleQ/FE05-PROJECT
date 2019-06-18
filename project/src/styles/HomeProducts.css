@@ -10,30 +10,35 @@
 	background-color: #dddddd;
 	border-radius: 50px;
 }
-/*.container {
-  position: relative;
-}
-.img {
-  opacity: 1;
-  display: block;
-  width: 100%;
-  height: auto;
-  transition: .5s ease;
-  backface-visibility: hidden;
-}
-.container:hover .img {
-  opacity: 0.3;
+.card {
+    border-color: transparent;
+    transition: all is linear;
 }
 
-.container:hover .btn-cart {
-  opacity: 1;
+.card:hover {
+    border: 0.04rem solid rgba(0, 0, 0, 0.2);
+    box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.2);
 }
-.btn-cart {
-  transition: .5s ease;
-  opacity: 0;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-}*/
+
+.card-footer {
+    background: transparent;
+    border-top: transparent;
+    transition: all is linear;
+}
+
+.img-container {
+    position: relative;
+    overflow: hidden;
+}
+
+.cart-img-top {
+    transition: all is linear;
+}
+
+.img-container:hover .cart-img-top {
+    transform: scale(1.2);
+}
+
+.img-container:hover {
+    transform: translate(0, 0);
+}

@@ -44,13 +44,16 @@ class BlogPosts extends Component {
 		});
 
 		return(
-			<div className="padding">
+			<div>
 				<div className="container-fluid">
-					<hr/>
-					<div className="row text-center">
-						<div className="col-12">
-							<span className="blog-title font-weight-bold">BLOG POSTS</span>
+					<div className="container">
+						<hr/>
+						<div className="row text-center">
+							<div className="col-12">
+								<span className="blog-title font-weight-bold">BLOG POSTS</span>
+							</div>
 						</div>
+						<hr/>
 					</div>
 				</div>
 				<div className="container-fluid">

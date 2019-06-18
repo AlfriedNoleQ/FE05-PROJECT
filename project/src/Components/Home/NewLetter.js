@@ -9,7 +9,6 @@ class NewLetter extends Component {
 		return(
 			 <div className="newletter">
 				<div className="container-fluid padding">
-					<hr/>
 					<div className="row text-center padding">
 						<div className="col-12">
 							<span className="letter-title font-weight-bold">NEWS LETTER</span>
