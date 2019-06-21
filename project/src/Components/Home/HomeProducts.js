@@ -71,7 +71,7 @@ class HomeProducts extends Component {
 					<div className="container">
 						<hr/>
 							<div className="text-center">
-								<span className="d-inline-block title font-weight-bold">NEW PRODUCTS</span>
+								<span className="d-inline-block title font-weight-bold">SẢN PHẨM MỚI</span>
 							</div>
 						<hr/>
 					</div>
@@ -83,7 +83,7 @@ class HomeProducts extends Component {
 						</div>
 					</div>
 					<div className="text-center padding">
-						<Link to="/products"><button className="btn btn-success btn-lg">More...</button></Link>
+						<Link to="/products"><button className="btn btn-outline-success btn-lg">Xem thêm...</button></Link>
 					</div>
 				</div>
 			</div>

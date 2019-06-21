@@ -54,7 +54,8 @@ class SignUp extends Component {
 	render() {
 		return(
         	<div className="container-fluid text-center">
-			<h3 className="padding">New? Register Now!</h3>
+        	<div className="padding"></div>
+			<h3 className="padding">Bạn là người mới? Hãy ghi danh ngay nào!</h3>
 				<div className="container padding">
 					<form onSubmit={this.onSubmit}>
 					  <div class="form-group row">
@@ -65,8 +66,8 @@ class SignUp extends Component {
 							className="form-control" 
 							id="exampleInputEmail1" 
 							aria-describedby="emailHelp" 
-							placeholder="Enter email..."
-							onChange={this.onChange} />
+							placeholder="Nhập email..."
+							onChange={this.onChange} required/>
 					    </div>
 					  </div>
 					  <div class="form-group row">
@@ -76,8 +77,8 @@ class SignUp extends Component {
 							name="username" 
 							className="form-control" 
 							id="usn"
-							placeholder="User name..."
-							onChange={this.onChange} />
+							placeholder="Nhập tên sử dụng..."
+							onChange={this.onChange} required/>
 					    </div>
 					  </div>
 					  <div class="form-group row">
@@ -87,8 +88,8 @@ class SignUp extends Component {
 							name="password" 
 							className="form-control" 
 							id="exampleInputPassword1" 
-							placeholder="Password..." 
-							onChange={this.onChange} />
+							placeholder="Mật khẩu..." 
+							onChange={this.onChange} required/>
 					    </div>
 					  </div>
 					  <div class="form-group row">
@@ -98,8 +99,8 @@ class SignUp extends Component {
 							name="address" 
 							className="form-control" 
 							id="exampleInputPassword1" 
-							placeholder="Address..."
-							onChange={this.onChange} />
+							placeholder="Địa chỉ..."
+							onChange={this.onChange} required/>
 					    </div>
 					  </div>
 					  <div class="form-group row">
@@ -109,13 +110,13 @@ class SignUp extends Component {
 							name="phone" 
 							className="form-control" 
 							id="exampleInputPassword1" 
-							placeholder="phone..."
-							onChange={this.onChange} />
+							placeholder="Số điện thoại..."
+							onChange={this.onChange} required/>
 					    </div>
 					  </div>
 					  	<div className="form-group form-check">
 							<input type="checkbox" className="form-check-input" id="exampleCheck1" />
-							<label className="form-check-label" for="exampleCheck1">Creat account</label>
+							<label className="form-check-label" for="exampleCheck1">Tạo tài khoản</label>
 						</div>
 						<div className="btn-submit">
 							<button type="submit" className="btn btn-outline-success btnSubmit">Submit</button>

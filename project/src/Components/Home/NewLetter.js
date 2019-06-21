@@ -9,20 +9,25 @@ class NewLetter extends Component {
 		return(
 			 <div className="newletter">
 				<div className="container-fluid padding">
-					<div className="row text-center padding">
-						<div className="col-12">
-							<span className="letter-title font-weight-bold">NEWS LETTER</span>
+					<div className="container">
+						<hr/>
+						<div className="row text-center">
+							<div className="col-12">
+								<span className="letter-title font-weight-bold">NHẬN NHỮNG TIN TỨC MỚI NHẤT</span>
+							</div>
 						</div>
+						<hr/>
+						<div className="padding"></div>
 					</div>
 					<div className="container col-6 text-center">
 						<div className="row padding">
 							<input type="email" 
 							className="form-control" 
-							placeholder="Your Email..."/>
+							placeholder="Email của bạn..."/>
 						</div>
 						<div className="text-center">
 							<button type="submit" 
-							className="btn btn-success">Sign In</button>
+							className="btn btn-success">Đăng ký</button>
 						</div>
 					</div>
 				</div>

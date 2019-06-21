@@ -70,7 +70,7 @@ class HotDeals extends Component {
 					<div className="container">
 						<hr/>
 						<div className="text-center">
-							<span className="d-inline-block title font-weight-bold">HOT DEALS</span>
+							<span className="d-inline-block title font-weight-bold">SẢN PHẨM HOT</span>
 						</div>
 						<hr/>
 					</div>
@@ -82,7 +82,7 @@ class HotDeals extends Component {
 						</div>
 					</div>
 					<div className="text-center">
-						<Link to="/products"><button className="btn btn-success btn-lg">More...</button></Link>
+						<Link to="/products"><button className="btn btn-outline-success btn-lg">Xem thêm...</button></Link>
 					</div>
 				</div>
 			</div>

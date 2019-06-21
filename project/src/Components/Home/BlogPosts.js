@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.min.js';
 import $ from "jquery";
+import '../../styles/BlogPosts.css';
 import Axios from 'axios';
 
 class BlogPosts extends Component {
@@ -31,12 +32,12 @@ class BlogPosts extends Component {
 		let listBlogs = this.state.posts.map((item) =>{
 			return(
 				<div className="col-12 mx-auto col-md-6 col-lg-3 my-3">
-					<div class="card">
-					  <img src={require(`../../${item.img}`)} class="card-img-top" alt="..."/>
-					  <div class="card-body">
-					    <h5 class="card-title text-uppercase font-weight-bold">{item.blogTitle}</h5>
-					    <p class="card-text">{item.content}</p>
-					    <a href="#" class="btn btn-outline-primary">Read my blog</a>
+					<div className="card">
+					  <img src={require(`../../${item.img}`)} className="card-img-top" alt="..."/>
+					  <div className="card-body">
+					    <h5 className="card-title text-uppercase font-weight-bold">{item.blogTitle}</h5>
+					    <p className="card-text">{item.content}</p>
+					    <a href="#" className="btn btn-outline-success">Xem thêm...</a>
 					  </div>
 					</div>
 				</div>
@@ -44,13 +45,13 @@ class BlogPosts extends Component {
 		});
 
 		return(
-			<div>
+			<div className="padding">
 				<div className="container-fluid">
 					<div className="container">
 						<hr/>
 						<div className="row text-center">
 							<div className="col-12">
-								<span className="blog-title font-weight-bold">BLOG POSTS</span>
+								<span className="blog-title font-weight-bold">BLOG</span>
 							</div>
 						</div>
 						<hr/>
@@ -69,3 +70,6 @@ class BlogPosts extends Component {
 }
 
 export default BlogPosts;
+
+
+
