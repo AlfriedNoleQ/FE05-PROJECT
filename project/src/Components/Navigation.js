@@ -79,9 +79,12 @@ class Navigation extends Component {
 											        <div className="md-form mb-5">
 											          <i className="fas fa-envelope prefix grey-text">
 											           <label data-error="wrong" data-success="right" for="defaultForm-email">
-											          Your email or username</label>
+											          Username</label>
 											          </i>
-											          <input type="email" id="defaultForm-email" className="form-control validate"/>
+											          <input type="text" 
+											          id="defaultForm-email" 
+											          className="form-control validate" 
+											          required/>
 											        </div>
 
 											        <div className="md-form mb-4">
@@ -89,18 +92,33 @@ class Navigation extends Component {
 											           <label data-error="wrong" data-success="right" for="defaultForm-pass">
 											          Your password</label>
 											          </i>
-											          <input type="password" id="defaultForm-pass" className="form-control validate"/>
+											          <input type="password" 
+											          id="defaultForm-pass" 
+											          className="form-control validate" 
+											          required/>
 											        </div>
 
+											        <div className="form-check float-left">
+													    <input type="checkbox" className="form-check-input" id="exampleCheck1" />
+													    <label className="form-check-label" for="exampleCheck1">Remember me</label>
+													</div>
+
+											        <div>
+											        	<a className="float-right" href="#">Forget your account?</a>
+											        </div>
 											      </div>
+
 											      <div className="modal-footer d-flex justify-content-center">
-											        <button className="btn btn-outline-primary">Login</button>											      </div>
+											        <button type="submit" className="btn btn-outline-primary">Login</button>
+											        <button className="btn btn-outline-danger">Admin</button>
+											      </div>
+
 											    </div>
 											  </div>
 											</div>
 
 											<Link className="nav-link navlink" data-toggle="modal" data-target="#modalLoginForm">
-												LOGIN
+												SIGN IN
 											</Link>
 										</li>
 
@@ -109,7 +127,7 @@ class Navigation extends Component {
 									<div className="form-inline my-2 my-lg-0">
 										<div className="container-1">
 												<span className="icon"><i className="fa fa-search"></i></span>
-												<input type="search" id="search" name="search" placeholder="Search..." onKeyUp={ this.search } />
+												<input type="search" id="search" name="search" placeholder="Tìm kiếm..." onKeyUp={ this.search } />
 										</div>
 									</div>
 
@@ -119,10 +137,10 @@ class Navigation extends Component {
 										</button>
 										<div className="dropdown-menu" aria-labelledby="dropdownMenuButton">
 											<Link to="/">
-												<a className="dropdown-item">My Profile</a>
+												<a className="dropdown-item">Hồ sơ của tôi</a>
 											</Link>
 											<Link to="/">
-												<a className="dropdown-item">Orders History</a>
+												<a className="dropdown-item">Lịch sử đặt hàng</a>
 											</Link>
 										</div>
 									</div>

@@ -17,18 +17,22 @@ class Footer extends Component {
 					<div className="container-fluid padding">
 						<div className="row text-center">
 							<div className="col-md-4">
-								<p className="footer-title font-weight-bold">OUR INFORMATION</p>
-								<p>Phone: 0905-000-888</p>
+								<p className="footer-title font-weight-bold">THÔNG TIN CỦA CHÚNG TÔI</p>
+								<p>Điện thoại: 0905-000-888</p>
 								<p>Email: dslr@gmail.com</p>
-								<p>Address: Danang, Vietnam</p>
+								<p>Địa chỉ: Danang, Vietnam</p>
 							</div>
 							<div className="col-md-4">
-								<p className="footer-title font-weight-bold">OPEN HOURS</p>
-								<p>9:00 am to 18:00 pm</p>
-								<p>Sunday: Close</p>
+								<p className="footer-title font-weight-bold">GIỜ MỞ CỬA</p>
+								<p>9:00 sáng to 18:00 chiều</p>
+								<p>Chủ nhật:Đóng cửa</p>
 							</div>
-							<div className="col-md-4">
-								<p className="footer-title font-weight-bold">SERVICE</p>
+							<div className="col-md-4 service">
+								<p className="footer-title font-weight-bold">DỊCH VỤ</p>
+								<p><a href="#">Trợ giúp và hướng dẫn</a></p>
+								<p><a href="#">Bảo hành</a></p>
+								<p><a href="#">Vận chuyển</a></p>
+								<p><a href="#">Những câu hỏi thường gặp</a></p>
 							</div>
 						</div>
 					</div>

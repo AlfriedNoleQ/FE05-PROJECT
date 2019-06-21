@@ -197,25 +197,49 @@
     {
       "id": 1,
       "img": "images/blog/post1.jpg",
-      "blogTitle": "Here is my blog",
+      "blogTitle": "Đây là blog của tôi",
       "content": "Lorem ipsum dolor sit amet, consectetur latid adipisicing elit, sed do eiusmod ran tempor edne incididunt ut labore et adim dolore magna aliqua."
     },
     {
       "id": 2,
       "img": "images/blog/post2.jpg",
-      "blogTitle": "Here is my blog",
+      "blogTitle": "Đây là blog của tôi",
       "content": "Lorem ipsum dolor sit amet, consectetur latid adipisicing elit, sed do eiusmod ran tempor edne incididunt ut labore et adim dolore magna aliqua."
     },
     {
       "id": 3,
       "img": "images/blog/post3.jpg",
-      "blogTitle": "Here is my blog",
+      "blogTitle": "Đây là blog của tôi",
       "content": "Lorem ipsum dolor sit amet, consectetur latid adipisicing elit, sed do eiusmod ran tempor edne incididunt ut labore et adim dolore magna aliqua."
     },
     {
       "id": 4,
       "img": "images/blog/post4.jpg",
-      "blogTitle": "Here is my blog",
+      "blogTitle": "Đây là blog của tôi",
+      "content": "Lorem ipsum dolor sit amet, consectetur latid adipisicing elit, sed do eiusmod ran tempor edne incididunt ut labore et adim dolore magna aliqua."
+    },
+    {
+      "id": 5,
+      "img": "images/blog/post4.jpg",
+      "blogTitle": "Đây là blog của tôi",
+      "content": "Lorem ipsum dolor sit amet, consectetur latid adipisicing elit, sed do eiusmod ran tempor edne incididunt ut labore et adim dolore magna aliqua."
+    },
+    {
+      "id": 6,
+      "img": "images/blog/post3.jpg",
+      "blogTitle": "Đây là blog của tôi",
+      "content": "Lorem ipsum dolor sit amet, consectetur latid adipisicing elit, sed do eiusmod ran tempor edne incididunt ut labore et adim dolore magna aliqua."
+    },
+    {
+      "id": 7,
+      "img": "images/blog/post2.jpg",
+      "blogTitle": "Đây là blog của tôi",
+      "content": "Lorem ipsum dolor sit amet, consectetur latid adipisicing elit, sed do eiusmod ran tempor edne incididunt ut labore et adim dolore magna aliqua."
+    },
+    {
+      "id": 8,
+      "img": "images/blog/post1.jpg",
+      "blogTitle": "Đây là blog của tôi",
       "content": "Lorem ipsum dolor sit amet, consectetur latid adipisicing elit, sed do eiusmod ran tempor edne incididunt ut labore et adim dolore magna aliqua."
     }
   ]
