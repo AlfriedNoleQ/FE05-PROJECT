@@ -36,31 +36,31 @@ class Navigation extends Component {
 
 										<li className="nav-item">
 											<Link to="/"className="nav-link navlink">
-												HOME
+												Home
 											</Link>
 										</li>
 
 										<li className="nav-item">
 											<Link to="/products"className="nav-link navlink">
-												PRODUCTS
+												Products
 											</Link>
 										</li>
 
 										<li className="nav-item">
 											<Link to="/guide"className="nav-link navlink">
-												GUIDE
+												Guide
 											</Link>
 										</li>
 
 										<li className="nav-item">
 											<Link to="/blog"className="nav-link navlink">
-												BLOG
+												Blog
 											</Link>
 										</li>
 
 										<li className="nav-item">
 											<Link to="/signup" className="nav-link navlink">
-												REGISTER
+												Register
 											</Link>
 										</li>
 
@@ -79,7 +79,7 @@ class Navigation extends Component {
 											        <div className="md-form mb-5">
 											          <i className="fas fa-envelope prefix grey-text">
 											           <label data-error="wrong" data-success="right" for="defaultForm-email">
-											          Username</label>
+											          Tài khoản</label>
 											          </i>
 											          <input type="text" 
 											          id="defaultForm-email" 
@@ -90,7 +90,7 @@ class Navigation extends Component {
 											        <div className="md-form mb-4">
 											          <i className="fas fa-lock prefix grey-text">
 											           <label data-error="wrong" data-success="right" for="defaultForm-pass">
-											          Your password</label>
+											          Mật khẩu</label>
 											          </i>
 											          <input type="password" 
 											          id="defaultForm-pass" 
@@ -100,17 +100,17 @@ class Navigation extends Component {
 
 											        <div className="form-check float-left">
 													    <input type="checkbox" className="form-check-input" id="exampleCheck1" />
-													    <label className="form-check-label" for="exampleCheck1">Remember me</label>
+													    <label className="form-check-label" for="exampleCheck1">Ghi nhớ tôi</label>
 													</div>
 
 											        <div>
-											        	<a className="float-right" href="#">Forget your account?</a>
+											        	<a className="float-right" href="#">Bạn có quên tài khoản không?</a>
 											        </div>
 											      </div>
 
 											      <div className="modal-footer d-flex justify-content-center">
-											        <button type="submit" className="btn btn-outline-primary">Login</button>
-											        <button className="btn btn-outline-danger">Admin</button>
+											        <button type="submit" className="btn btn-outline-primary">Đăng nhập</button>
+											        <button type="reset" className="btn btn-outline-danger">Reset</button>
 											      </div>
 
 											    </div>
@@ -118,7 +118,7 @@ class Navigation extends Component {
 											</div>
 
 											<Link className="nav-link navlink" data-toggle="modal" data-target="#modalLoginForm">
-												SIGN IN
+												Login
 											</Link>
 										</li>
 
@@ -141,6 +141,9 @@ class Navigation extends Component {
 											</Link>
 											<Link to="/">
 												<a className="dropdown-item">Lịch sử đặt hàng</a>
+											</Link>
+											<Link to="/">
+												<a className="dropdown-item">Log out</a>
 											</Link>
 										</div>
 									</div>

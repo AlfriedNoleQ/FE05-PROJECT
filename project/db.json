@@ -162,19 +162,19 @@
   ],
   "users": [
     {
-      "email": "huuthangjunior@gmail.com",
-      "username": "htj123",
-      "password": "123456",
-      "address": "Quang Nam",
-      "phone": "0123456789",
+      "email": "tantran1104@gmail.com",
+      "username": "tantran",
+      "password": "11112222",
+      "address": "da nang",
+      "phone": "9090-505-454",
       "id": 1
     },
     {
-      "email": "tantran1104@gmail.com",
-      "username": "quy123123",
-      "password": "dscx2rfdsv",
+      "email": "dsa@gmail.com",
+      "username": "ssssdaad",
+      "password": "dsssssda",
       "address": "da nang",
-      "phone": "2145756545",
+      "phone": "0905-000-444",
       "id": 2
     }
   ],

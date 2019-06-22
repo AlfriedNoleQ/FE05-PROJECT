@@ -55,6 +55,7 @@ class HotDeals extends Component {
 											disabled={product.inCart?true:false} onClick={() => {
 											value.addToCart(Number(product.id)); product.inCart = true;}}>
 											{product.inCart ? <i class="fas fa-cart-arrow-down"/> : <i class="fas fa-cart-plus"/>}
+											Add to cart
 										</button>
 									)
 								}}
@@ -70,7 +71,7 @@ class HotDeals extends Component {
 					<div className="container">
 						<hr/>
 						<div className="text-center">
-							<span className="d-inline-block title font-weight-bold">SẢN PHẨM HOT</span>
+							<span className="d-inline-block title font-weight-bold text-primary">SẢN PHẨM HOT</span>
 						</div>
 						<hr/>
 					</div>
