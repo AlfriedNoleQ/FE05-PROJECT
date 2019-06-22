@@ -60,6 +60,7 @@ class ProductList extends Component {
 												disabled={product.inCart?true:false} onClick={() => {
 												value.addToCart(Number(product.id)); product.inCart = true;}}>
 												{product.inCart ? <i class="fas fa-cart-arrow-down"/> : <i class="fas fa-cart-plus"/>}
+												Add to cart
 											</button>
 										)
 									}}

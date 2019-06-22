@@ -13,7 +13,7 @@ class NewLetter extends Component {
 						<hr/>
 						<div className="row text-center">
 							<div className="col-12">
-								<span className="letter-title font-weight-bold">NHẬN NHỮNG TIN TỨC MỚI NHẤT</span>
+								<span className="letter-title font-weight-bold text-primary">NHẬN NHỮNG TIN TỨC MỚI NHẤT</span>
 							</div>
 						</div>
 						<hr/>

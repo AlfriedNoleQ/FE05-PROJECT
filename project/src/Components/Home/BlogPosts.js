@@ -51,7 +51,7 @@ class BlogPosts extends Component {
 						<hr/>
 						<div className="row text-center">
 							<div className="col-12">
-								<span className="blog-title font-weight-bold">BLOG</span>
+								<span className="blog-title font-weight-bold text-primary">BLOG CỦA TÔI</span>
 							</div>
 						</div>
 						<hr/>

@@ -4,6 +4,10 @@ import 'bootstrap/dist/js/bootstrap.min.js';
 import './../styles/SignUp.css';
 import Axios from 'axios';
 
+const phoneRegex = RegExp(
+	/^\d{10}$/
+);
+
 class SignUp extends Component {
 	constructor(props) {
 		super(props);
@@ -21,35 +25,23 @@ class SignUp extends Component {
 	onChange(e) {
 		this.setState({[e.target.name]: e.target.value});
 		console.log(this.state);
-	}
+	};
 
-	onSubmit(e) {
+	onSubmit (e) {
+		alert("Bạn đã ghi danh thành công!")
 		e.preventDefault()
 
 		Axios.post("http://localhost:3000/users",{
-			...this.state
-		})
-		.then(response => {
-			console.log("sdsdsdsd")
-			console.log(response.data)
-		})
-		.catch(err => {
-			// console.log(err)
-		})
-
-		// Axios.post("http://localhost:3000/users",{
-		// 	...this.state.user
-		// })
-		// .then(response => {
-		// 	console.log(response.data);
-		// 	this.setState ({
-		// 		user: response.data
-		// 	});
-		// })
-		// console.log("resgiter");
-	}
-
-		
+				...this.state
+			})
+			.then(response => {
+				console.log("sdsdsdsd")
+				console.log(response.data)
+			})
+			.catch(err => {
+				console.log(err)
+			})
+	};
 
 	render() {
 		return(
@@ -68,6 +60,7 @@ class SignUp extends Component {
 							aria-describedby="emailHelp" 
 							placeholder="Nhập email..."
 							onChange={this.onChange} required/>
+							<small className="float-left">Email của bạn</small>
 					    </div>
 					  </div>
 					  <div class="form-group row">
@@ -77,8 +70,10 @@ class SignUp extends Component {
 							name="username" 
 							className="form-control" 
 							id="usn"
+							minlength="6"
 							placeholder="Nhập tên sử dụng..."
 							onChange={this.onChange} required/>
+							<small className="float-left">Tên đăng nhập của bạn, tối thiểu phải có 6 ký tự</small>
 					    </div>
 					  </div>
 					  <div class="form-group row">
@@ -88,8 +83,10 @@ class SignUp extends Component {
 							name="password" 
 							className="form-control" 
 							id="exampleInputPassword1" 
-							placeholder="Mật khẩu..." 
+							placeholder="Mật khẩu..."
+							minlength="6"
 							onChange={this.onChange} required/>
+							<small className="float-left">Mật khẩu của bạn, tối thiểu phải có 6 ký tự</small>
 					    </div>
 					  </div>
 					  <div class="form-group row">
@@ -101,26 +98,31 @@ class SignUp extends Component {
 							id="exampleInputPassword1" 
 							placeholder="Địa chỉ..."
 							onChange={this.onChange} required/>
+							<small className="float-left">Địa chỉ của bạn</small>
 					    </div>
 					  </div>
 					  <div class="form-group row">
 					    <label class="col-sm-2 col-form-label">Phone: </label>
 					    <div class="col-sm-10">
-					     	<input type="text" 
+					     	<input type="tel" 
 							name="phone" 
 							className="form-control" 
 							id="exampleInputPassword1" 
 							placeholder="Số điện thoại..."
+							pattern="[0-9]{4}-[0-9]{3}-[0-9]{3}"
+							title="Số điện thoại phải có định dạng: xxxx-xxx-xxx"
 							onChange={this.onChange} required/>
+							<small className="float-left">Định dạng yêu cầu: 0905-045-450</small>
 					    </div>
+
 					  </div>
 					  	<div className="form-group form-check">
 							<input type="checkbox" className="form-check-input" id="exampleCheck1" />
 							<label className="form-check-label" for="exampleCheck1">Tạo tài khoản</label>
 						</div>
 						<div className="btn-submit">
-							<button type="submit" className="btn btn-outline-success btnSubmit">Submit</button>
-							<button type="submit" className="btn btn-outline-primary btnReset">Reset</button>
+							<button type="submit" onClick={this.onSubmit} className="btn btn-outline-success btnSubmit">Submit</button>
+							<button type="reset" className="btn btn-outline-primary btnReset">Reset</button>
 						</div>
 					</form>
 				</div>
